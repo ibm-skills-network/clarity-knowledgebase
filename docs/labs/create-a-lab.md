@@ -35,8 +35,12 @@ Click `Create Lab` and select `Cloud IDE` as the tool. For the title, enter `Hel
 
 ## Writing our instructions
 
-Click `Edit Instructions` to edit the instructions for your lab.
+Click `Edit Instructions` to start. This will open **Author IDE** in a new tab.
+
+**Author IDE** is the editing environment you will be using to work on your lab. You can write rich markdown with powerful features like pagination, 1 click code execution and more.
 
 ## Testing our lab
+
+Click `Launch Lab` to view your lab as a learner would see it.
 
 ## Inserting our lab into our course
