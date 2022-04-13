@@ -49,7 +49,7 @@ const config = {
             type: 'doc',
             docId: 'getting-started',
             position: 'left',
-            label: 'Knowledge Base',
+            label: 'Author Workbench Knowledge Base',
           },
           {
             href: 'https://author.skills.network',
