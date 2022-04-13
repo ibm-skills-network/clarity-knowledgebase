@@ -33,14 +33,38 @@ Click `Create Lab` and select `Cloud IDE` as the tool. For the title, enter `Hel
 
 **Once you have created your lab**, you will be able to edit the instructions, test your lab, and easily insert it into your course.
 
-## Writing our instructions
+## Writing your instructions
 
 Click `Edit Instructions` to start. This will open **Author IDE** in a new tab.
 
-**Author IDE** is the editing environment you will be using to work on your lab. You can write rich markdown with powerful features like pagination, 1 click code execution and more.
+**Author IDE** is the editing environment you will be using to work on your lab. You can write rich markdown with easy-to-use features like pagination, 1 click code execution, version control and more.
 
-## Testing our lab
+When you first open your lab instructions, there will be some useful text already in the editor. It will walk you through Author IDE's features and help you get familiar with the environment.
 
-Click `Launch Lab` to view your lab as a learner would see it.
+For the purposes of this short guide, let's **replace all the text** in the editor with the below text.
 
-## Inserting our lab into our course
+~~~markdown
+::page{title="Welcome to the Hello World with JavaScript Lab"}
+
+In this lab, we will be showing you how to use JavaScript to print "Hello World" to the console.
+
+To get started, create a new file in your code editor called `helloWorld.js` and paste the following code into it:
+
+```javascript
+console.log("hello world!");
+```
+
+Now just open the terminal and run `node helloWorld.js` and you should see "hello world!" printed to the console!
+~~~
+
+You should see the preview updating on the right to reflect your changes. Now that we have some instructions, click `Save` to save your progress, and then `Publish` to finalize your changes.
+
+That's it! We've created our first lab.
+
+## Testing your lab
+
+Back on the course page, click `Launch Lab` to see your lab in action. This will open a new tab. Here, you can **preview exactly how learners will experience your lab**. Try following the instructions of our lab now!
+
+![Cloud IDE Screenshot](/img/labs/cloud-ide-screenshot.png)
+
+Awesome! We now have a lab that's ready to be added to our course.
