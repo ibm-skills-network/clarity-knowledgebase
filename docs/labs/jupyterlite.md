@@ -26,7 +26,8 @@ import skillsnetwork
 
 URL = 'https://www.url.to/my/dataset.csv'
 
-df = skillsnetwork.load_dataset(URL)
+raw_data = skillsnetwork.load_dataset(URL)
+df = pd.read_csv(raw_data)
 ```
 
 ## Should you use JupyterLite?
