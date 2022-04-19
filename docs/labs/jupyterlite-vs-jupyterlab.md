@@ -17,7 +17,7 @@ This page explains the differences between JupyterLite and JupyterLab - and whic
 
 ## When should you use JupyterLite?
 
-In general, we recommend authors use jupyterlite:
+In general, we recommend authors use JupyterLite:
  - __For the learner's best experience__
  - If all required libraries are compadible.
    - See [JupyterLite - Unsupported Libraries](./jupyterlite#unsupported-libraries).
@@ -26,6 +26,6 @@ In general, we recommend authors use jupyterlite:
 
 ## When should you use JupyterLab?
 
-We recommend authors use jupyterlab:
+We recommend authors use JupyterLab:
  - Required libraries are incompadible with JupyterLite.
  - CPU-intensive cells take too long in JupyterLite.
