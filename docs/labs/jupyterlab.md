@@ -10,9 +10,9 @@ We provide it to authors when [JupyterLite](./jupyterlite) has insufficient comp
 
 ## Should you use JupyterLab?
 
-We recommend you only use JupyterLab for your labs when necessary.
+We recommend you only use JupyterLab for your labs when necessary. If possible, we recommend you use JupyterLite instead.
 
-See [JupyterLite vs JupyterLab](./jupyterlite-vs-jupyterlab) for more details.
+For more information on why JupyterLite is preferred over JupyterLab see [JupyterLite vs JupyterLab](./jupyterlite-vs-jupyterlab).
 
 ### JupyterLab Caveats
 
@@ -65,7 +65,7 @@ spark = SparkSession \
     .getOrCreate()
 ```
 
-Should run with no errors
+Should run with no errors.
 
 </td>
 </tr>

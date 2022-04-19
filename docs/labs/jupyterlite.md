@@ -6,7 +6,9 @@ sidebar_position: 4
 
 JupyterLite is a responsive python notebook environment we provide for your learners' best experience.
 
-## Using JupyterLite:
+## Using JupyterLite
+
+### Loading Data
 
 You may be accustomed to loading data the following way:
 
@@ -68,4 +70,4 @@ Even if your lab uses libraries supported by JupyterLite, there are specific sce
  - Your lab has highly cpu-intensive code cells.
    - For example, `sklearn.manifold.TSNE.fit_transform` was found to be impractical in JupyterLite.
  - Large datasets (>100MB+) are being used.
-   - Loading large datasets may be inconvenient for your learners on jupyterlite - it will load faster with JupyterLab.
+   - Loading large datasets may be inconvenient for your learners on jupyterlite - they will load faster with JupyterLab.
