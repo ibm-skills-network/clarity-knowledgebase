@@ -20,10 +20,10 @@ This page explains the differences between JupyterLite and JupyterLab - and whic
 In general, we recommend authors use jupyterlite:
  - __For the learner's best experience__
  - All libraries used are compadible
-   - See [JupyterLite](./jupyterlite#) for additional info
+   - See [JupyterLite - Unsupported Libraries](./jupyterlite#unsupported-libraries) for additional info
  - Low-medium rumtime code cells
 
-See [JupyterLite](./jupyterlite) for additional info
+See [JupyterLite - Should you use JupyterLite?](./jupyterlite#should-you-use-jupyterlite) for additional info
 
 ## When should you use JupyterLab?
 

@@ -50,7 +50,7 @@ Many popular python science libraries are compadible with JupyterLite:
  - `seaborn`
  - And many more -->
 
-### Unsupported libraries
+### Unsupported Libraries
 
 The following libraries are currently unsupported in JupyterLite
 If your lab requires them, you should use [JupyterLab](./jupyterlab) instead:
