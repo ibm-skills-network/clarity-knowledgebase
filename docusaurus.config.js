@@ -9,7 +9,7 @@ const config = {
   title: 'Author Workbench Knowledge Base',
   tagline: 'TODO',
   url: 'https://knowledge.author.skills.network',
-  baseUrl: '/author-workbench-knowledgebase/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
