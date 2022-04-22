@@ -115,7 +115,7 @@ Example:
         <td>
             <code>sn_asset_library_notebook_url</code>
         </td>
-        <td>Link to the JupyterLite Notebook (<code>.ipynb</code>) file obtains from the Skills Network Asset Library</td>
+        <td>Link to the JupyterLite Notebook (<code>.ipynb</code>) file obtained from the Skills Network Asset Library</td>
     </tr>
     <tr>
         <td>
@@ -152,7 +152,7 @@ Example:
         <td>
             <code>sn_asset_library_notebook_url</code>
         </td>
-        <td>Link to the JupyterNotebook (<code>.ipynb</code>) file obtains from the Skills Network Asset Library</td>
+        <td>Link to the JupyterNotebook (<code>.ipynb</code>) file obtained from the Skills Network Asset Library</td>
     </tr>
     <tr>
         <td>
@@ -189,7 +189,7 @@ Example:
         <td>
             <code>sn_asset_library_notebook_url</code>
         </td>
-        <td>Link to the Markdown instructions (.md) file obtains from the Skills Network Asset Library.</td>
+        <td>Link to the Markdown instructions (.md) file obtained from the Skills Network Asset Library.</td>
     </tr>
     <tr>
         <td>
