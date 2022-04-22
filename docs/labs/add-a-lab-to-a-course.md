@@ -84,7 +84,7 @@ The `Custom Parameters` field is where you will specify the details of your lab.
         <td>
             <code>sn_labs_tool</code>
         </td>
-        <td>Tool in Skills Network Labs with which to open the Markdown instructions file. (<code>theia</code>, <code>theiadocker</code>, <code>theiaopenshift</code>)
+        <td>Tool in Skills Network Labs with which to open the Markdown instructions file. (<code>cloud-ide</code>, <code>cloud-ide-kubernetes</code>, <code>cloud-ide-openshift</code>)
 </td>
     </tr>
 </table>
@@ -94,7 +94,7 @@ Example:
 ```json
 [
     "sn_asset_library_instructions_url=https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/here-metrics-on-openshift/instructions.md",
-    "sn_labs_tool=theiaopenshift"
+    "sn_labs_tool=cloud-ide-openshift"
 ]
 ```
 
