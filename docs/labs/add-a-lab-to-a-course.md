@@ -239,6 +239,6 @@ Example:
 
 ### Getting your Asset's URL
 
-You can get your resource's Asset URL by clicking "Copy Lab URL" in Skills Network Studio:
+You can get your resource's Asset URL by clicking "Copy Lab URL" in [Author Workbench](https://author.skills.network/) on your course page:
 
 ![Copy Lab URL](/img/labs/copy-lab-url.png)
