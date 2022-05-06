@@ -28,8 +28,8 @@ import skillsnetwork
 
 URL = 'https://www.url.to/my/dataset.csv'
 
-raw_data = skillsnetwork.load_dataset(URL)
-df = pd.read_csv(raw_data)
+await skillsnetwork.load_dataset(URL)
+df = pd.read_csv('dataset.csv')
 ```
 
 ## Should you use JupyterLite?
@@ -62,6 +62,7 @@ If your lab requires them, you should use [JupyterLab](./jupyterlab) instead:
  - `requests`
  - `wordcloud`
  - `pyspark`
+ - `sqlite3`
 
 ### Additional Caveats
 
