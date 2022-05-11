@@ -1,20 +1,10 @@
 ---
-sidebar_position: 5
+sidebar_position: 1
 ---
 
-<!--
-title: Manim and Docker
-description: Manim is a technical tool used to create animations using  Python . Manim is difficult to install, the article we teach  you how to install it using Doker 
-published: true
-date: 2022-05-02T15:07:08.973Z
-tags: content, manim content, manim
-editor: ckeditor
-dateCreated: 2022-05-02T15:07:08.973Z
--->
+# Manim
 
-# Create animated content using Manim
-
-Manim is a python library used to create high-precision math and computer science animated videos.
+[Manim](https://github.com/3b1b/manim) is a python library used to create high-precision math and computer science animated videos.
 
 Manim can be difficult to install so this tutorial will teach you how to run it using a Docker container.
 
