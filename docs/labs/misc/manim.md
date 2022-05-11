@@ -53,7 +53,7 @@ Or copy and paste one of these URLs:
 
   <p>Cut and Paste one of the above links in your browser, you should see the following:</p>
 
-  <img width="70%" src={require('@site/static/img/labs/manim_browser.png').default} />
+  <img width="70%" src={require('@site/static/img/labs/misc/manim_browser.png').default} />
 
   </li>
   <li>Congratulations! You're now ready to use manim!</li>
@@ -106,7 +106,7 @@ class SN(Scene):
   </li>
   <li><p>You should see a scene resembling the following:</p>
 
-  <img width="70%" src={require('@site/static/img/labs/manim_scene.png').default} />
+  <img width="70%" src={require('@site/static/img/labs/misc/manim_scene.png').default} />
 
   <p>For more information, check out the <a href="https://docs.manim.community/en/stable/">Manim docs</a>.</p>
 
@@ -124,7 +124,7 @@ So you're going to need to download the video and Jupyter lab. The lab is straig
 
   <p>For example, <code>SN@2022-05-02@02-43-50.mp4 more generally [name of class]@[date].mp4</code> as seen in the image below:</p>
 
-  <img width="30%" src={require('@site/static/img/labs/manim_download_video.png').default} />
+  <img width="30%" src={require('@site/static/img/labs/misc/manim_download_video.png').default} />
 
   </li>
   <li><p>Finally, when you close your application you must make sure the container is closed, open a terminal window and type:</p>
