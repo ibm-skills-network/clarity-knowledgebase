@@ -68,6 +68,9 @@ Let's start with a simple example:
 
 ```python
 from manim import *
+
+# To download image used in this example:
+!wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/assets/logos/SN_favicon.png
 ```
   </li>
 
