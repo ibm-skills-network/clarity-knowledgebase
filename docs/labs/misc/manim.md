@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Manim
+# Manim for Animated Videos
 
 [Manim](https://github.com/3b1b/manim) is a python library used to create high-precision math and computer science animated videos.
 
@@ -144,4 +144,3 @@ docker stop peaceful_kowalevski
   </li>
 
 </ol>
-
