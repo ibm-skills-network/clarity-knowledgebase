@@ -8,14 +8,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Author Workbench Knowledge Base',
   tagline: 'TODO',
-  url: 'https://knowledge.author.skills.network',
+  url: 'https://author.skills.network/docs',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'ibm-skills-network', // Usually your GitHub org/user name.
   projectName: 'author-workbench-knowledgebase', // Usually your repo name.
-  trailingSlash: true,
+  trailingSlash: false,
 
   presets: [
     [
