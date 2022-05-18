@@ -15,7 +15,7 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'ibm-skills-network', // Usually your GitHub org/user name.
   projectName: 'author-workbench-knowledgebase', // Usually your repo name.
-  trailingSlash: false,
+  trailingSlash: true,
 
   presets: [
     [
