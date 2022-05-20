@@ -4,14 +4,14 @@ sidebar_position: 1
 
 # Manim for Animated Videos
 
-[Manim](https://github.com/3b1b/manim) is a python library used to create high-precision math and computer science animated videos.
+[Manim](https://github.com/3b1b/manim) is a Python library used to create high-precision math and computer science animated videos.
 
-Manim can be difficult to install so this tutorial will teach you how to run it using a Docker container.
+Manim can be difficult to install so this tutorial will teach you how to run it more simply using a Docker container.
 
 ## Setup
 
 <ol>
-  <li><p>The first thing you're going to need is Docker, if you don't already have docker, you can download it <a href="https://docs.docker.com/get-docker/">here</a>.</p></li>
+  <li><p>The first thing you're going to need is Docker. If you don't already have docker, you can download it <a href="https://docs.docker.com/get-docker/">here</a>.</p></li>
   <li><p>Pull the docker image for manim:</p>
 
 ```bash
@@ -22,7 +22,7 @@ docker pull manimcommunity/manim
 
   </li>
   <li><p>There are several ways to interact with Manim. We're going to work with Jupyter Lab. For different methods check out <a href="https://hub.docker.com/r/manimcommunity/manim">this link</a>.</p></li>
-  <li><p>Make sure nothing is running on port 8888 - then open a terminal window and run the following command to start up the manim docker container:</p>
+  <li><p>First, make sure nothing is running on port 8888, then open a terminal window and run the following command to start up the manim docker container:</p>
 
 ```bash
 docker run -it -p 8888:8888 manimcommunity/manim jupyter lab --ip=0.0.0.0
@@ -41,7 +41,7 @@ Or copy and paste one of these URLs:
  or http://127.0.0.1:8888/lab?token=542f72b2a4f0f8eb58089e3ab795f43c1ad3730b0500af58
 ```
 
-  <p>Cut and Paste one of the above links in your browser, you should see the following:</p>
+  <p>Cut and Paste one of the above links in your browser. You should see the following:</p>
 
   <img width="70%" src={require('@site/static/img/labs/misc/manim_browser.png').default} />
 
@@ -54,7 +54,7 @@ Or copy and paste one of these URLs:
 Let's start with a simple example:
 
 <ol>
-  <li><p>Open a new jupyterlab notebook and import all the contents of the manim library in a cell:</p>
+  <li><p>Open a new JupyterLab notebook and import all the contents of the manim library in a cell:</p>
 
 ```python
 from manim import *
@@ -71,7 +71,7 @@ from manim import *
       <li><p>Animation</p></li>
     </ul>
 
-  <p>To create a scene, we create a <code>Scene</code> obejct as follows:</p>
+  <p>To create a scene, we create a <code>Scene</code> object as follows:</p>
 
 ```python
 class SN(Scene):
@@ -88,13 +88,13 @@ class SN(Scene):
 ```
 
   </li>
-  <li><p>To run the scene, run the following in the next code cell:</p>
+  <li><p>To run the scene, execute the following in the next code cell:</p>
 
 ```python
 %manim SN
 ```
   
-  <p>More generally <code>%manim [name of class]</code> - where <code>[name of class]</code> is the name of the scene class you defined.</p>
+  <p>More generally, <code>%manim [name of class]</code> - where <code>[name of class]</code> is the name of the scene class you defined.</p>
 
   </li>
   <li><p>You should see a scene resembling the following:</p>
@@ -109,7 +109,7 @@ class SN(Scene):
 ### Saving your work
 
 __If you shut down your Docker Container you will lose your work.__
-So you're going to need to download the video and Jupyter lab. The lab is straightforward; let's see how to download the video: 
+So you're going to need to download the video and JupyterLab. The lab is straightforward; let's see how to download the video: 
 
 <ol>
   <li><p>Go to the directory <code>./media/Jupiter/</code></p></li>
