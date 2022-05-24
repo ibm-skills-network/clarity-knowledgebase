@@ -8,7 +8,24 @@ JupyterLite is a responsive python notebook environment we provide for your lear
 
 ## Using JupyterLite
 
-### Loading Data
+### Installing Packages
+
+Installing packages in JupyterLab is usually done with a package manager such as `pip`, `conda` or `mamba` like:
+
+```
+!pip install numpy pandas
+!conda install -c conda-forge numpy pandas
+!mamba install numpy pandas
+```
+
+In JupyterLite, it's a little more involved. You must import the `piplite` package first, and use it to install packages like below:
+
+```python
+import piplite
+await piplite.install(['numpy', 'pandas'])
+```
+
+### Downloading Data
 
 You may be accustomed to loading data the following way:
 
@@ -28,7 +45,7 @@ import skillsnetwork
 
 URL = 'https://www.url.to/my/dataset.csv'
 
-await skillsnetwork.load_dataset(URL)
+await skillsnetwork.download_dataset(URL)
 df = pd.read_csv('dataset.csv')
 ```
 
