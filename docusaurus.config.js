@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Author Workbench Knowledge Base',
   tagline: 'TODO',
-  url: 'https://author.skills.network/docs',
+  url: 'https://author.skills.network',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
