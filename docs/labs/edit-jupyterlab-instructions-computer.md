@@ -2,13 +2,13 @@
 sidebar_position: 6
 ---
 
-# Edit JupyterLite/Lab Instructions - Computer
+# Edit JupyterLab Instructions - Computer
 
 ## Prerequisites
-To edit lab instructions on your computer, you must have Jupyterlab or Jupyterlite installed.
+To edit lab instructions on your computer, you must have Jupyterlab installed.
 
 ## 1. Install author-ide-extension
-On the Extension Marketplace of Jupyterlab or Jupyterlite, search and install ```skillsnetwork-authoring-extension```.
+On the Extension Marketplace of JupyterLab, search and install ```skillsnetwork-authoring-extension```.
 
 Or, execute on your terminal: ```pip install skillsnetwork-authoring-extension```
 
@@ -18,7 +18,7 @@ On Author Workbench, copy the lab token located on the ```Edit Notebook``` windo
 ![Copy Lab Token Screenshot](/img/labs/edit-lab-instructions/copy-token-screenshot.png)
 
 ## 3. Edit Lab Instructions 
-Under the ```Skills Network``` tab on JupyterLab/JupyterLite, select ```Edit a lab```. Then, paste the copied token and start editing your lab's instructions!
+Under the ```Skills Network``` tab on JupyterLab select ```Edit a lab```. Then, paste the copied token and start editing your lab's instructions!
 
 ![Skills Network Menu Screenshot](/img/labs/edit-lab-instructions/menu-screenshot.png)
 
