@@ -5,17 +5,15 @@ sidebar_position: 6
 # Edit JupyterLab Instructions - Computer
 
 ## Prerequisites
-To edit lab instructions on your computer, you must have Jupyterlab installed ([installaton instructions](https://jupyter.org/install)).
+To edit lab instructions on your computer, you must have Jupyterlab installed ([installation instructions](https://jupyter.org/install)).
 
 ## 1. Install skillsnetwork-authoring-extension
 On the Extension Marketplace of JupyterLab, search and install ```skillsnetwork-authoring-extension```.
 
-Or, execute on your terminal: ```jupyter lab```
+Or, execute ```pip install skillsnetwork-authoring-extension``` on your terminal.
 
 ## 2. Start JupyterLab
-Start JupyterLab on your computer.
-
-This is normally done by executing the following: ```pip install skillsnetwork-authoring-extension```
+Start JupyterLab on your computer by executing on your terminal: ```jupyter lab```
 
 ## 3. Copy your Lab Token
 On Author Workbench, copy the lab token located on the ```Edit Notebook``` window of your lab.
