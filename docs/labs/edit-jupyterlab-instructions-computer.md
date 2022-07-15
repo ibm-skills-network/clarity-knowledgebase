@@ -8,7 +8,9 @@ sidebar_position: 6
 To edit lab instructions on your computer, you must have Jupyterlab installed ([installation instructions](https://jupyter.org/install)).
 
 ## 1. Install skillsnetwork-authoring-extension
-Execute ```pip install skillsnetwork-authoring-extension``` on your terminal.
+On the Extension Marketplace of JupyterLab, search and install ```skillsnetwork-authoring-extension```
+
+Or, execute ```pip install skillsnetwork-authoring-extension``` on your terminal.
 
 ## 2. Restart JupyterLab
 Restart JupyterLab on your computer by executing on your terminal: ```jupyter lab```
