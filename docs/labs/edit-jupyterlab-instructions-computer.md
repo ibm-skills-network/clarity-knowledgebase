@@ -51,12 +51,13 @@ docker run -p 8888:8888 --platform linux/x86_64 sn-jupyterlab-docker-jupyterlab 
 ```
 
 ### Adding sn_jupyterlab alias to rc file (optional, advanced)
-It may be annooying to have to type out every time you want to run skillsnetwork jupyterlab in your current working directory.
+It may be annoying to have to type out:
 ```bash
 docker run -p 8888:8888 --platform linux/x86_64 sn-jupyterlab-docker-jupyterlab jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root -v .:/resources
 ```
+every time you want to run skillsnetwork jupyterlab in your current working directory.
 
-Alternatively, you can add an alias to your rc file, for example if using `zsh`, add the following to `~/.zshrc` (if using `bash` then replace `~/.zshrc` with `~/.bashrc` in the following instructions:
+Alternatively, you can add an alias to your rc file, for example if using `zsh`, add the following to `~/.zshrc` (if using `bash` then replace `~/.zshrc` with `~/.bashrc` in the following instructions):
 ```bash
 alias sn_jupyterlab="docker run -p 8888:8888 -v $(pwd):/resources --platform linux/x86_64 sn-jupyterlab-docker-jupyterlab jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root"
 ```
