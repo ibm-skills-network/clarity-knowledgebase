@@ -34,10 +34,10 @@ Once you are done, click ```Publish``` to publish your lab's instructions.
 
 ## Editing using skillsnetwork JupyterLab Docker Image (advanced)
 
-If you want to author instructions using the same environment as SN-labs, we recommend the skillsnetwork JupyterLab docker image.
+If you want to create your JupyterLab instructions using the same environment that SkillsNetwork labs will use, we recommend using the [SkillNetwork JupyterLab Docker Image](https://hub.docker.com/r/skillsnetworkbot/jupyterlab-authoring).
 
 ### Prerequisites
- - Have [Docker](https://docs.docker.com/get-docker/) installed.
+ - [Docker](https://docs.docker.com/get-docker/) is installed and running.
 
 ### Pulling the SkillsNetwork JupyterLab image:
 
@@ -49,6 +49,10 @@ docker pull skillsnetworkbot/jupyterlab-authoring:latest
 ```bash
 docker run -p 8888:8888 -v $(pwd):/resources --platform linux/x86_64 skillsnetworkbot/jupyterlab-authoring:latest jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root
 ```
+
+You will then see a link "`http://127.0.0.1:8888/lab`" go to this link in your browser to edit your jupyter lab(s)!
+
+> Note: Don't use the "`http://[RANDOM HASH]:8888/lab`" url, since it won't work.
 
 ### Adding sn_jupyterlab alias to rc file (optional, advanced)
 It may be annoying to have to type out:
