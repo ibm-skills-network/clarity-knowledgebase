@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# Author Jupyter Notebooks on your Machine
+# Author Jupyter Notebooks on Your Machine
 
 ## Downloading Your Project Files
 
