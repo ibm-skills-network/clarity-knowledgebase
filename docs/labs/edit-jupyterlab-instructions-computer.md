@@ -32,7 +32,7 @@ Once you are done, click ```Publish``` to publish your lab's instructions.
 
 ![Publish Screenshot](/img/labs/edit-lab-instructions/publish-instructions-screenshot.png)
 
-## Editing using skillsnetwork JupyterLab Docker Image (advanced)
+## Editing using SkillsNetwork JupyterLab Docker Image (advanced)
 
 If you want to create your JupyterLab instructions using the same environment that SkillsNetwork labs will use, we recommend using the [SkillNetwork JupyterLab Docker Image](https://hub.docker.com/r/skillsnetworkbot/jupyterlab-authoring).
 
