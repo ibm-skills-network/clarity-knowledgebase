@@ -65,13 +65,13 @@ If you want to create your JupyterLab instructions using the same environment th
 ### Prerequisites
  - [Docker](https://docs.docker.com/get-docker/) is installed and running.
 
-### Pulling the SkillsNetwork JupyterLab image:
+### Pulling the SkillsNetwork JupyterLab Image:
 
 ```bash
 docker pull skillsnetworkbot/jupyterlab-authoring:latest
 ```
 
-### Starting JupyterLab in the current working directory
+### Starting JupyterLab in Your Current Working Directory
 ```bash
 docker run -p 8888:8888 -v $(pwd):/resources --platform linux/x86_64 skillsnetworkbot/jupyterlab-authoring:latest jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root
 ```
