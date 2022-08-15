@@ -34,7 +34,9 @@ Once you are done, click ```Publish``` to publish your lab's instructions.
 
 ## Editing using SkillsNetwork JupyterLab Docker Image (advanced)
 
-If you want to create your JupyterLab instructions using the same environment that SkillsNetwork labs will use, we recommend using the [SkillNetwork JupyterLab Docker Image](https://hub.docker.com/r/skillsnetworkbot/jupyterlab-authoring).
+If you want to create your JupyterLab instructions using the same environment that SkillsNetwork labs will use, we recommend using the [SkillsNetwork JupyterLab Docker Image](https://hub.docker.com/r/skillsnetworkbot/jupyterlab-authoring).
+
+> Note: The SkillsNetwork JupyterLab Docker Image requires \~4.5 GB of download data. Once extracted, the image totals \~10GB.
 
 ### Prerequisites
  - [Docker](https://docs.docker.com/get-docker/) is installed and running.
