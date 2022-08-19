@@ -89,7 +89,7 @@ every time you want to run the SkillsNetwork JupyterLab image in your current wo
 
 Alternatively, you can add an alias to your rc file, for example if using `zsh`, add the following to `~/.zshrc` (if using `bash` then replace `~/.zshrc` with `~/.bashrc` in the following instructions):
 ```bash
-alias sn_jupyterlab="docker run -p 8888:8888 -v \$(pwd):/resources --platform linux/x86_64 skillsnetworkbot/jupyterlab-authoring:latest jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root"
+alias sn_jupyterlab="docker run -p 8888:8888 -v \"\$(pwd)\":/resources --platform linux/x86_64 skillsnetworkbot/jupyterlab-authoring:latest jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root"
 ```
 
 Then run `source ~/.zshrc` to update 
