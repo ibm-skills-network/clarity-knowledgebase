@@ -73,7 +73,7 @@ docker pull skillsnetworkbot/jupyterlab-authoring:latest
 
 ### Starting JupyterLab in Your Current Working Directory
 ```bash
-docker run -p 8888:8888 -v $(pwd):/resources --platform linux/x86_64 skillsnetworkbot/jupyterlab-authoring:latest jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root
+docker run -p 8888:8888 -v "$(pwd)":/resources --platform linux/x86_64 skillsnetworkbot/jupyterlab-authoring:latest jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root
 ```
 
 You will then see a link "`http://127.0.0.1:8888/lab`" go to this link in your browser to edit your jupyter lab(s)!
@@ -83,7 +83,7 @@ You will then see a link "`http://127.0.0.1:8888/lab`" go to this link in your b
 ### Adding sn_jupyterlab alias to rc file (optional, advanced)
 It may be annoying to have to type out:
 ```bash
-docker run -p 8888:8888 -v $(pwd):/resources --platform linux/x86_64 skillsnetworkbot/jupyterlab-authoring:latest jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root
+docker run -p 8888:8888 -v "$(pwd)":/resources --platform linux/x86_64 skillsnetworkbot/jupyterlab-authoring:latest jupyter lab --ip 0.0.0.0 --ServerApp.password='' --ServerApp.token='' --port 8888 --no-browser --allow-root
 ```
 every time you want to run the SkillsNetwork JupyterLab image in your current working directory.
 
