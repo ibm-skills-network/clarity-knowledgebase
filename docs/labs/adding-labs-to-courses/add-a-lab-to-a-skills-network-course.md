@@ -275,7 +275,7 @@ HTML files will be automatically generated from instructional labs so they can b
 
 2. Copy the iFrame code provided 
 
-![image](/img/adding-labs-in-a-course/SN-instructional-lab-AW-modal.png)
+![image](/img/adding-labs-in-a-course/SN-AW-instructional-lab-modal.png)
 
 3. Close the pop-up and navigate to your Course Outline in the `Content` tab on your course page. Press the "Edit in Studio" button to open the outline in Skills Network Studio
 
