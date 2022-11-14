@@ -1,5 +1,6 @@
-# Add a Lab to your Skills Network Course
-Once you have created a lab, you then need to **add it to your course via Studio**. When you are adding a lab to your course, you **embed your lab into a unit of your course**. This way, learners will naturally progress through the course, and complete your labs as they go.
+# Add a Lab to your edX.org Course
+
+Once you have created a lab, you then need to **add it to your course via edX Studio**. When you are adding a lab to your course, you **embed your lab into a unit of your course**. This way, learners will naturally progress through the course, and complete your labs as they go.
 
 ## Enabling your Course to use Labs
 
@@ -7,11 +8,11 @@ Once you have created a lab, you then need to **add it to your course via Studio
 
     i. To start, you will need to open **Studio**. Navigate to your Course Outline on your course page. Press the "Edit in Studio" button.
 
-    ![image](/img/adding-labs-in-a-course/SN-AW-Course-Outline.png)
+    ![image](/img/adding-labs-in-a-course/SN-AW-Course-Outline-edX.png)
     
     ii. There, head to `Settings` -> `Advanced Settings`. This is where you will enable support for labs in your course.
     
-    ![image](/img/adding-labs-in-a-course/SN-Studio-Advanced-Settings.png)
+    ![image](/img/adding-labs-in-a-course/SN-edX-Studio-Advanced-Settings.png)
 
     iii. **Enable labs** by adding the below to `Advanced Module List`.
 
@@ -21,7 +22,7 @@ Once you have created a lab, you then need to **add it to your course via Studio
 ]
 ```
 
-![image](/img/adding-labs-in-a-course/SN-Studio-advanced-module-list.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-advanced-module-list.png)
 
 2. Next, while we are still on the Advanced Settings page, scroll down to `LTI Passports`. Here you will add the necessary credentials for your course to use the labs service.
 
@@ -33,7 +34,7 @@ Once you have created a lab, you then need to **add it to your course via Studio
 ]
 ```
 
-![image](/img/adding-labs-in-a-course/SN-Studio-LTI-Passports.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-LTI-Passports.png)
 
 > **Where do I find my LTI credentials?**
 >
@@ -58,43 +59,39 @@ HTML files will be automatically generated from instructional labs so they can b
 
 2. Copy the iFrame code provided 
 
-![image](/img/adding-labs-in-a-course/SN-AW-instructional-lab-modal-iframe.png)
+![image](/img/adding-labs-in-a-course/SN-AW-instructional-lab-modal-iframe-edX.png)
 
-3. Close the pop-up and navigate to your Course Outline in the `Content` tab on your course page. Press the "Edit in Studio" button to open the outline in Skills Network Studio
+3. Close the pop-up and navigate to your Course Outline in the `Content` tab on your course page. Press the "Edit in edX Studio" button to open the outline in edX Studio
 
-![image](/img/adding-labs-in-a-course/SN-AW-Course-Outline.png)
+![image](/img/adding-labs-in-a-course/SN-AW-Course-Outline-edX.png)
 
 4. Select the unit you want to add your lab in, or create a new unit if one doesn't exist yet
 
-![image](/img/adding-labs-in-a-course/SN-Studio-choose-unit.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-choose-unit.png)
 
-5. Within your desired unit, add a new HTML component
+5. Within your desired unit, add a new Text component
 
-![image](/img/adding-labs-in-a-course/SN-Studio-add-HTML-component.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-add-text-component.png)
 
 6. Select iFrame Tool from the dropdown list
 
-![image](/img/adding-labs-in-a-course/SN-Studio-iFrame-Tool.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-iFrame-Tool.png)
 
-7. Click on the Edit button
+8. Click the HTML button
 
-![image](/img/adding-labs-in-a-course/SN-Studio-edit-iFrame.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-iFrame-HTML.png)
 
-8. Select the HTML option
+9. Remove all existing content, and paste the iFrame code you obtained from step 2. Then click Save to exit the HTML editor.
 
-![image](/img/adding-labs-in-a-course/SN-Studio-iFrame-HTML.png)
-
-9. Remove all existing content, and paste the iFrame code you obtained from step 2. Then click OK to exit the HTML editor.
-
-![image](/img/adding-labs-in-a-course/SN-Studio-iFrame-HTML-edit.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-iFrame-HTML-edit.png)
 
 10. Click Save to save your work.
 
-![image](/img/adding-labs-in-a-course/SN-Studio-iFrame-save.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-iFrame-save.png)
 
 11. Now, your instructional lab should be embedded into your unit. You can preview the unit by clicking the Preview button in the top right corner, or publish the unit if you are satisfied with everything.
 
-![image](/img/adding-labs-in-a-course/SN-Studio-preview-unit.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-preview-unit.png)
 
 
 ## Add a (Non-Instructional) Lab to your Course
@@ -103,20 +100,20 @@ HTML files will be automatically generated from instructional labs so they can b
 
 To add a (non-instructional) lab to your course in **Studio**:
 
-1. In Skills Network Studio, go to the unit you want your lab to be in. If it doesn't exist yet, you can create a new unit.
+1. In edX Studio, go to the unit you want your lab to be in. If it doesn't exist yet, you can create a new unit.
 
-![image](/img/adding-labs-in-a-course/SN-Studio-choose-unit.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-choose-unit.png)
 
 
 2. Click the green advanced button and select LTI Consumer
 
-![image](/img/adding-labs-in-a-course/SN-Studio-add-advanced-component.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-add-advanced-component.png)
 
-![image](/img/adding-labs-in-a-course/SN-Studio-LTI-Consumer.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-LTI-Consumer.png)
 
-3. Edit the following properties of your LTI Consumer.
+3. Edit the following properties of your LTI Consumer and click Save.
 
-![image](/img/adding-labs-in-a-course/SN-Studio-edit-LTI-Consumer.png)
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-edit-LTI-Consumer.png)
 
 <table>
     <tr>
