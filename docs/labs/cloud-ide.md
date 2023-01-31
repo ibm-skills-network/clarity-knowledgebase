@@ -43,3 +43,26 @@ kubectl get pods
 It prints existing pods in your namespace.
 
 More commands can be found in the Kubernetes [documentation](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+
+## Embeddable AI
+
+Cloud IDE supports various Embeddable AI services includes Text-To-Speech, Speech-To-Text, and various Watson NLP services (e.g. sentiment, emotion, etc.). Learners have immediate access to all of these services (via HTTP API calls) to learn, test, and embed in their applications. Moreover, Skills Network provides images for all of these services so learners can _deploy_ the services to the provided Code Engine Project, alongisde their applcations.
+
+### Using the provided Services
+
+All of the services are available to all Cloud IDE learners, for all flavours of Cloud IDE. For example the Text-To-Speech can be accessed at: https://sn-watson-tts.labs.skills.network. To help learners both know what services are available and how to use them the Skills Network Toolbox provides a page for each of the Embeddable AI services which shows:
+  - Name and brief description
+  - Available Models
+  - Link to Documentation
+  - Example Commands (with button to easily copy or run in terminal)
+
+  <details>
+  <summary><b><u>View Screenshot</u></b></summary>
+  <img width="422" alt="image" src="https://user-images.githubusercontent.com/276912/215758158-2c8022b5-7d03-454e-a0bf-ed75e0d08d7d.png">
+  </details>
+
+Moreover, as an author, within Author IDE, you can add Buttons to your lab's markdown instructions to help learners open these pages with a simple button click.
+
+### Building and Deploying to Code Engine
+
+_Instructions Coming Soon...._
