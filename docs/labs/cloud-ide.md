@@ -86,21 +86,22 @@ From the same page simply click on Code Engine CLI button. This will open a new 
 
 ##### 3. Choose and deploy your desired Embeddable AI image
 
-To get started, simply visit the [model catalog](https://www.ibm.com/docs/en/watson-libraries?topic=models-catalog) and choose the Watson's AI model you would like to use.
-
-For this example, let's say you want to deploy the `sentiment_aggregated-bert-workflow_lang_multi_stock` model to Code Engine.
-
-Simply copy it's *Container Image* url as shown below
-
-![Models Catalog Container Image Url](/img/labs/models-catalog-container-image-url.png)
-
-Then from the same terminal that opened in the same last step, run the following commands to deploy the model:
-
-Choose a app name for your Code Engine application and set the container image url you just copied.
+To get started, simply run the following command in the terminal and choose the Watson's AI model you would like to use.
 
 ```bash
+ibmcloud cr image-list --restrict sn-labsassets
+```
+
+After you execute the above command, terminal will output all the different NLP images available. You can then simply choose one of them by copying it's url. For this example, let's say you want to deploy the `us.icr.io/sn-labsassets/sentiment-bert-watson-nlp-runtime` model to Code Engine.
+
+Then in the same terminal, run the following commands to deploy the model:
+
+```bash
+# Choose a app name for your Code Engine application
 APP_NAME="Replace with your Code Engine Application Name"
-CONTAINER_IMAGE_URL="Replace with the conatiner image url for your chosen model"
+
+# Replace with your desired Watson NLP image
+CONTAINER_IMAGE_URL="us.icr.io/sn-labsassets/sentiment-bert-watson-nlp-runtime"
 ```
 
 You an also set a visibility for your application, we would recommened to keep it as `project` to restrict any external traffic to it, and only allow the applications within your code engine project to be able to communicate with it as desired. For more infomration about visibility, check out the IBM Cloud Code Engine docs [here](https://cloud.ibm.com/docs/codeengine?topic=codeengine-application-workloads#optionsvisibility).
