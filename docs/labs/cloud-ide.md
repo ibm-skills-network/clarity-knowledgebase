@@ -64,5 +64,232 @@ All of the services are available to all Cloud IDE learners, for all flavours of
 Moreover, as an author, within Author IDE, you can add Buttons to your lab's markdown instructions to help learners open these pages with a simple button click.
 
 ### Building and Deploying to Code Engine
+If you would like to deploy any of the above-mentioned Embeddable AI NLP service and have it be available for anyone to use, you can follow these steps in order to deploy it. The deployment will be to IBM Cloud’s Code Engine. IBM Cloud Code Engine is a fully managed, cloud-native service for running containerized workloads on IBM Cloud. It allows developers to deploy and run code in a secure, scalable and serverless environment, without having to worry about the underlying infrastructure.
 
-_Instructions Coming Soon...._
+<details>
+  <summary><b><u>Deploying to Skills Network Code Engine</u></b></summary>
+
+The following steps allow you to test deploy to a IBM's Code Engine envrionement which is managed by Skills Network. This deployment is relatively easier and is recommended to quickly test out that if everything is working just fine.<br/>
+**Note: This deployment is temporary and is deleted after a few days.**
+
+##### 1. Create Code Engine Project
+
+In the left hand navigation pannel, there is an option for the Skills Network Toolbox. Simply open that and that expand the *CLOUD* section and then click on *Code Engine*. Finally cick on Create Project.
+
+![Create Code Engine Project](/img/labs/code-engine-create-project.png "Create Code Engine Project")
+
+##### 2. Click on Code Engine CLI Button
+
+From the same page simply click on Code Engine CLI button. This will open a new terminal and will login to a code engine project with everything alraedy set up for you.
+
+![Code Engine CLI](/img/labs/code-engine-cli-button.png "Code Engine CLI")
+
+##### 3. Choose and deploy your desired Embeddable AI image
+
+To get started, simply visit the [model catalog](https://www.ibm.com/docs/en/watson-libraries?topic=models-catalog) and choose the Watson's AI model you would like to use.
+
+For this example, let's say you want to deploy the `sentiment_aggregated-bert-workflow_lang_multi_stock` model to Code Engine.
+
+Simply copy it's *Container Image* url as shown below
+
+![Models Catalog Container Image Url](/img/labs/models-catalog-container-image-url.png)
+
+Then from the same terminal that opened in the same last step, run the following commands to deploy the model:
+
+Choose a app name for your Code Engine application and set the container image url you just copied.
+
+```bash
+APP_NAME="Replace with your Code Engine Application Name"
+CONTAINER_IMAGE_URL="Replace with the conatiner image url for your chosen model"
+```
+
+You an also set a visibility for your application, we would recommened to keep it as `project` to restrict any external traffic to it, and only allow the applications within your code engine project to be able to communicate with it as desired. For more infomration about visibility, check out the IBM Cloud Code Engine docs [here](https://cloud.ibm.com/docs/codeengine?topic=codeengine-application-workloads#optionsvisibility).
+
+```bash
+VISIBILITY=project
+```
+
+```bash
+ibmcloud ce application create \
+--name ${APP_NAME} \
+--env ACCEPT_LICENSE=true \
+--image ${CONTAINER_IMAGE_URL} \
+--registry-secret icr-secret \
+--visibility ${VISIBILITY}
+```
+
+After the application is ready, it will display the deployed NLP service URL in the terminal. You can then utilize this service URL in the same way as the other pre-existing Watson NLP services provided by Skills Network, and directly incorporate it into any of your other applications that have been deployed to Code Engine.
+
+</details>
+
+<details>
+  <summary><b><u>Deploying to your personal IBM Cloud account's Code Engine</u></b></summary>
+
+The following steps allow you to deploy the Watson NLP models to your personal IBM Cloud account's Code Engine envrionement. This deployment has some prerequisites and extra steps but ensures that your deployment is permanent untill you delete it yourself. 
+
+##### Prerequisites:
+
+Ensure that you have registered for a IBM Cloud account and have enabled the billing. You can [try it at no charge](https://cloud.ibm.com/registration?target=/codeengine/overview) and receive USD$200 in cloud credits.
+
+##### 1. Log in to your IBM Cloud account
+
+Using the `ibmcloud login` command log into your own IBM Cloud account. Remember to replace `USERNAME` with your IBM Cloud account email and then enter your password when promted to.
+
+```bash
+ibmcloud login -u USERNAME
+```
+Use `ibmcloud login --sso` command to login, if you have a federated ID.
+
+Then target any specific resource group in your account. By default, if you've completed the sign up process for your IBM Cloud account, you can use the `Default` resource group.
+
+```bash
+ibmcloud target -g Default
+```
+
+##### 2. Login to the IBM Entitled Registry
+
+You'll need to login to IBM Entitled Registry to download the desired Watson NLP models so you can deploy them to your own Code Engine project.
+
+Go [IBM's Container Library](https://myibm.ibm.com/products-services/containerlibrary) to get an Entitlement Key. This Key gives you access to pulling and using the IBM Watson Speech Libraries for Embed. However, do note that **this key is only valid for a Year as a trial.**
+
+Once you've obtained the Entitlement Key from the container software library you can login to the registry with the key, and pull the images.
+
+Replace it with your own IBM Entitlement Key.
+
+```bash
+IBM_ENTITLEMENT_KEY="YOUR_IBM_ENTITLEMENT_KEY"
+```
+
+Login to docker registry to pull the images.
+
+```bash
+echo $IBM_ENTITLEMENT_KEY | docker login -u cp --password-stdin cp.icr.io
+```
+
+##### 3. Choose and build your desired Embeddable AI image
+
+Similar to deploying the image to Skills Network managed Code Engine, you will first need to choose a model from the [model catalog](https://www.ibm.com/docs/en/watson-libraries?topic=models-catalog).
+
+Using the same example as above, let's say you want to deploy the `sentiment_aggregated-bert-workflow_lang_multi_stock` model to Code Engine.
+
+Simply copy it's *Container Image* url as shown below.
+
+![Models Catalog Container Image Url](/img/labs/models-catalog-container-image-url.png)
+
+Now simply run the following commands in a terminal to download the chosen model to *models* directory:
+
+```bash
+CONTAINER_IMAGE_URL="Replace with the conatiner image url for your chosen model"
+mkdir models
+docker run -it --rm -e ACCEPT_LICENSE=true -v `pwd`/models:/app/models ${CONTAINER_IMAGE_URL}
+```
+After this create a new file called `Dockerfile` and add the following contents to it:
+
+```bash
+ARG TAG=1.0
+FROM cp.icr.io/cp/ai/watson-nlp-runtime:${TAG}
+COPY models /app/models
+```
+Finally build your image by executing this command in your terminal:
+
+```bash
+docker build -t my-watson-nlp-runtime:latest
+```
+
+##### 4 Create a namespace and log in to ICR
+
+You will need to create a namespace before you can upload your images, and make sure you're targeting the ICR region you want, which right now is `global`.
+
+Choose a name for your namespace, specified as `${NAMESPACE}`, and create the namespace. Currently, it's set to `my-embeddable-ai`, you can choose to rename it to anything you choose.
+
+```bash
+NAMESPACE=my-embeddable-ai
+```
+
+```bash
+ibmcloud cr region-set global
+ibmcloud cr namespace-add ${NAMESPACE}
+ibmcloud cr login
+```
+
+##### 6. Push your image to your namespace
+
+```bash
+REGISTRY=icr.io
+
+# Tag and push the image
+docker tag my-watson-nlp-runtime:latest ${REGISTRY}/${NAMESPACE}/my-watson-nlp-runtime:latest
+docker push ${REGISTRY}/${NAMESPACE}/my-watson-nlp-runtime:latest
+```
+
+##### 7. Deploy the image to Code Engine
+
+**1:** Target a region and a resource group
+
+Choose the region closest to you and/or your target users. Picking a region closer to you or your users makes the browser extension faster. The further the region the longer the request to the model has to travel.
+
+You can choose any region from this list:
+
+#### Americas
+- `us-south` - Dallas
+- `br-sao` - Sao Paulo
+- `ca-tor` - Toronto
+- `us-east` - Washington DC
+
+#### Europe
+- `eu-de` - Frankfurt
+- `eu-gb` - London
+
+#### Asia Pacific
+- `au-syd` - Sydney
+- `jp-tok` - Tokyo
+
+Use the following commands to target Dallas as the region and the Default resource group.
+
+```bash
+REGION=us-south
+RESOURCE_GROUP=Default
+```
+
+```bash
+ibmcloud target -r ${REGION} -g ${RESOURCE_GROUP}
+```
+
+**2:** Create and Select a new Code Engine project
+
+In this example, a project named `my-test-project` will be create in the resource group set by the previous command.
+
+```bash
+ibmcloud ce project create --name my-test-project
+ibmcloud ce project select --name my-test-project
+```
+
+**3:** Deploy Watson NLP Image
+
+Choose a app name for your Code Engine application and set the container image url you just copied.
+
+```bash
+APP_NAME="Replace with your Code Engine Application Name"
+```
+
+You an also set a visibility for your application, we would recommened to keep it as `project` to restrict any external traffic to it, and only allow the applications within your code engine project to be able to communicate with it as desired. For more infomration about visibility and other optional parameters, check out the IBM Cloud Code Engine docs [here](https://cloud.ibm.com/docs/codeengine?topic=codeengine-application-workloads).
+
+```bash
+VISIBILITY=project
+```
+
+```bash
+ibmcloud ce application create \
+  --name ${APP_NAME} \
+  --port 1080 \
+  --min-scale 1 --max-scale 2 \
+  --cpu 2 --memory 8G \
+  --image private.${REGISTRY}/${NAMESPACE}/my-watson-nlp-runtime:latest \
+  --registry-secret ce-auto-icr-private-${REGION} \
+  --visibility ${VISIBILITY} \
+  --env ACCEPT_LICENSE=true
+```
+
+After the application is ready, it will display the deployed NLP service URL in the terminal. You can then utilize this service URL in the same way as the other pre-existing Watson NLP services provided by Skills Network, and directly incorporate it into any of your other applications that have been deployed to Code Engine.
+
+</details>
