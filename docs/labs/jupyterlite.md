@@ -18,11 +18,10 @@ Installing packages in JupyterLab is usually done with a package manager such as
 !mamba install numpy pandas
 ```
 
-In JupyterLite, it's a little more involved. You must import the `piplite` package first, and use it to install packages like below:
+In JupyterLite you simply use the `%pip` magic command:
 
 ```python
-import piplite
-await piplite.install(['numpy', 'pandas'])
+%pip install numpy pandas
 ```
 
 ### Downloading Data
