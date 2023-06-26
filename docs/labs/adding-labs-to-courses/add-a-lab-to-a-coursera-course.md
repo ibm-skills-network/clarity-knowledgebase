@@ -65,21 +65,29 @@ To add a (non-instructional) lab to your course in **Coursera**:
 
 <table>
     <tr>
-        <td> Launch URL </td> <td> <code>https://labs.cognitiveclass.ai/login/lti</code> </td>
+        <td> Launch URL </td> <td> See the <a href="#lab-launch-url">Lab Launch Url</a> section below.  </td>
     </tr>
     <tr>
-        <td> Consumer Key </td> <td> See the <a href="#custom-parameters">LTI Credentials</a> section below. </td>
+        <td> Consumer Key </td> <td> See the <a href="#lti-credentials">LTI Credentials</a> section below. </td>
     </tr>
     <tr>
-        <td> Secret </td> <td> See the <a href="#custom-parameters">LTI Credentials</a> section below. </td>
+        <td> Secret </td> <td> See the <a href="#lti-credentials">LTI Credentials</a> section below. </td>
     </tr>
     <tr>
         <td> Learner Privacy </td> <td> <code>Share learner ID, full name, and email address</code> </td>
     </tr>
-    <tr>
-        <td> Custom Parameters </td> <td> See the <a href="#custom-parameters">Custom Parameters</a> section below. </td>
-    </tr>
 </table>
+
+### Lab Launch Url
+
+The Lab Launch url can be easily found in Author Workbench on your course page. Just follow these steps:
+1. On your course page, navigate to the lab you want (under the `Labs` tab) and click "Embed"
+
+![image](/img/adding-labs-in-a-course/SN-AW-course-embed-lab-button.png)
+
+2. Copy the the Lab's Launchg Url by clicking on the `Copy` button.
+
+![image](/img/adding-labs-in-a-course/SN-AW-coursera-lab-modal-lab-launch-url.png)
 
 ### LTI Credentials
 
@@ -87,168 +95,7 @@ The consumer key and secret can be found in Author Workbench on your course page
 
 ![image](/img/adding-labs-in-a-course/SN-AW-LTI-Credentials-Coursera.png)
 
-### Custom Parameters
 
-The `Custom Parameters` field is where you will specify the details of your lab. Depending on the **tool your lab uses**, the custom parameters **will be different**. Reference your tool type below to find out what the custom parameters are.
+Once everything has been added, your final configuration should look something like this:
 
----
-
-<details><summary><h4 id="cloud-ide">Cloud IDE</h4></summary>
-<p>
-
-<table>
-    <tr>
-        <td>
-            <code>sn_asset_library_instructions_url</code>
-        </td>
-        <td>Link to the Markdown instructions (<code>.md</code>) file obtained from the link copied in Author Workbench (<a href="#add-an-instructional-lab-to-your-course">in step 2</a>).</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_labs_tool</code>
-        </td>
-        <td>Tool in Skills Network Labs with which to open the Markdown instructions file. (<code>cloud-ide</code>, <code>cloud-ide-docker</code>, <code>cloud-ide-openshift</code>)
-</td>
-    </tr>
-</table>
-
-Example:
-
-| Key | Value |
-|----------|-----------|
-|sn_asset_library_instructions_url|https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/here-metrics-on-openshift/instructions.md|
-|sn_labs_tool|cloud-ide-openshift|
-
-</p>
-</details>
-
-<details><summary><h4 id="jupyterlite">JupyterLite</h4></summary>
-<p>
-
-<table>
-    <tr>
-        <td>
-            <code>sn_labs_filepath</code>
-        </td>
-        <td>Path to store the lab in a student’s <code>/resources</code> folder.</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_asset_library_notebook_url</code>
-        </td>
-        <td>Link to the JupyterLite Notebook (<code>.ipynb</code>) file obtained from the link copied in Author Workbench (<a href="#add-an-instructional-lab-to-your-course">in step 2</a>).</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_labs_tool</code>
-        </td>
-        <td>Tool to open your Lab - in this case it would be "<code>jupyterlite</code>"</td>
-    </tr>
-</table>
-
-Example:
-
-| Key | Value |
-|----------|-----------|
-|sn_asset_library_notebook_url|https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-PY0101ES-edX/labs/Module2/PY0101ES-2.2_notebook_quizz_sets.ipynb|
-|sn_labs_filepath|/labs/Module2/PY0101ES-2.2_notebook_quizz_sets.ipynb|
-|sn_labs_tool|jupyterlite|
-
-
-</p>
-</details>
-
-<details><summary><h4 id="jupyterlab">JupyterLab</h4></summary>
-<p>
-
-<table>
-    <tr>
-        <td>
-            <code>sn_labs_filepath</code>
-        </td>
-        <td>Path to store the lab in a student’s <code>/resources</code> folder.</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_asset_library_notebook_url</code>
-        </td>
-        <td>Link to the JupyterNotebook (<code>.ipynb</code>) file obtained from the link copied in Author Workbench (<a href="#add-an-instructional-lab-to-your-course">in step 2</a>).</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_labs_tool</code>
-        </td>
-        <td>Tool to open your Lab - in this case it would be "<code>jupyterlab</code>"</td>
-    </tr>
-</table>
-
-Example:
-
-| Key | Value |
-|----------|-----------|
-|sn_asset_library_notebook_url|https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-PY0101ES-edX/labs/Module2/PY0101ES-2.2_notebook_quizz_sets.ipynb|
-|sn_labs_filepath|/labs/Module2/PY0101ES-2.2_notebook_quizz_sets.ipynb|
-|sn_labs_tool|jupyterlab|
-
-</p>
-</details>
-
-<details><summary><h4 id="rstudio">RStudio</h4></summary>
-<p>
-
-<table>
-    <tr>
-        <td>
-            <code>sn_asset_library_instructions_url</code>
-        </td>
-        <td>Path where to store the lab in a student’s /resources folder.</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_asset_library_notebook_url</code>
-        </td>
-        <td>Link to the Markdown instructions (.md) file obtained from the link copied in Author Workbench (<a href="#add-an-instructional-lab-to-your-course">in step 2</a>).</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_labs_tool</code>
-        </td>
-        <td>Tool to open your Lab - in this case it would be "<code>rstudio-ide</code>"</td>
-    </tr>
-</table>
-
-</p>
-</details>
-
-<details><summary><h4 id="datasette">Datasette</h4></summary>
-<p>
-
-<table>
-    <tr>
-        <td>
-            <code>sn_labs_filepath</code>
-        </td>
-        <td>Path where to store the lab in a student’s <code>/resources</code> folder.</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_asset_library_sqlite_db_url</code>
-        </td>
-        <td>Link to the sqlite db file (<code>.db</code>) file obtained from the Skills Network Asset Library.</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_labs_tool</code>
-        </td>
-        <td>Tool to open your Lab - in this case it would be "<code>datasette</code>"</td>
-    </tr>
-    <tr>
-        <td>
-            <code>sn_asset_library_instructions_url</code>
-        </td>
-        <td>Link to the Markdown instructions (<code>.md</code>) file obtained from the link copied in Author Workbench (<a href="#add-an-instructional-lab-to-your-course">in step 2</a>).</td>
-    </tr>
-</table>
-
-</p>
-</details>
+![image](/img/adding-labs-in-a-course/SN-AW-coursera-lti-consumer-params.png)
