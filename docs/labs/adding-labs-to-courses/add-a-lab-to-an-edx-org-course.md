@@ -153,3 +153,117 @@ Once everything has been added, your final configuration should look something l
 ![image](/img/adding-labs-in-a-course/SN-AW-edx-lti-consumer-params-2.png)
 ![image](/img/adding-labs-in-a-course/SN-AW-edx-lti-consumer-params-3.png)
 ![image](/img/adding-labs-in-a-course/SN-AW-edx-lti-consumer-params-4.png)
+
+## Add a Datasette Lab to your Course
+Adding Datasette labs to your course involves a few steps. This guide will outline all the steps you must follow to successfully add a Datasette lab to your course or guided project outline.
+
+### Step 1. Add a lab to your outline
+1. In edX Studio, go to the unit you want your lab to be in. If it doesn't exist yet, you can create a new unit.
+
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-choose-unit.png)
+
+
+2. Click the green advanced button and select LTI Consumer
+
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-add-advanced-component.png)
+
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-LTI-Consumer.png)
+
+3. Edit the following properties of your LTI Consumer and click Save.
+
+![image](/img/adding-labs-in-a-course/SN-edX-Studio-edit-LTI-Consumer.png)
+
+<table>
+    <tr>
+        <td> LTI ID </td> <td> <code>sn_lti</code> </td>
+    </tr>
+    <tr>
+        <td> LTI URL </td> <td> <code> https://labs.cognitiveclass.ai/login/lti </code> </td>
+    </tr>
+    <tr>
+        <td> Custom Parameters </td> <td> See <a href="#step-2-start-writing-your-custom-lti-parameters">Step 2</a> </td>
+    </tr>
+    <tr>
+        <td> LTI Launch Target </td> <td> <code>New Window</code> </td>
+    </tr>
+    <tr>
+        <td> Request user's username </td> <td> <code>true</code> </td>
+    </tr>
+    <tr>
+        <td> Request user's email </td> <td> <code>true</code> </td>
+    </tr>
+    <tr>
+        <td> Send extra parameters </td> <td> <code>true</code> </td>
+    </tr>
+</table>
+
+### Step 2. Start writing your Custom LTI Parameters
+Now you must create the Custom Parameters. The values you use in your Custom Parameters are very important.
+
+Below are the parameters you will need. Some of the values will have to be obtained in the next steps.
+
+**We strongly recommend you give each lab a unique path in the `sn_labs_filepath` value**
+```
+[
+    "sn_labs_tool=datasette",
+    "sn_labs_filepath=/labs/datasette/lab.db",
+    "sn_asset_library_sqlite_db_url=<SEE STEP 3>",
+    "sn_asset_library_instructions_url=<SEE STEP 4>"
+]
+```
+
+### Step 3. Upload your database file to the SN File Library
+You must supply a database file as the value for `sn_asset_library_sqlite_db_url` in your Custom Parameters.
+
+To do this, you should upload a `.db` or `.sqlite` file of your choice to the SN File Library. Head to the `content` tab of your course or guided project.
+
+Here you can open the File Library and upload your database file.
+![image](/img/adding-labs-in-a-course/open-file-library.png)
+
+Once you have uploaded your database file to SN File Library, select the file and copy the asset URL.
+
+![image](/img/adding-labs-in-a-course/copy-file-url.png)
+
+Now you can add this URL to your Custom Parameters like so
+```
+[
+    "sn_labs_tool=datasette",
+    "sn_labs_filepath=/labs/datasette/lab.db",
+    "sn_asset_library_sqlite_db_url=https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/datasette-test/datasets/MyDemoDataset.db",
+    "sn_asset_library_instructions_url=<SEE STEP 4>"
+]
+```
+
+### Step 4. Copy your instructions url
+Finally, you just need an instructions URL.
+
+This can be obtained by clicking opening the `embed` popup on your lab in Author Workbench.
+![image](/img/adding-labs-in-a-course/embed-lab.png)
+
+Now you can add this URL to your Custom Parameters like so
+```
+[
+    "sn_labs_tool=datasette",
+    "sn_labs_filepath=/labs/datasette/lab.db",
+    "sn_asset_library_sqlite_db_url=https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/datasette-test/datasets/MyDemoDataset.db",
+    "sn_asset_library_instructions_url=https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/datasette-test/instructions.md"
+]
+```
+
+### Step 5. Paste your Custom Parameters into studio and save
+Now that you have completed the steps above, you should have all the right parameters to complete the set up of your lab in SN Studio.
+
+You should paste the Custom Parameters you built in the previous steps to complete the LTI Consumer object.
+
+![image](/img/adding-labs-in-a-course/custom-params-datasette.png)
+
+Now you can click `Save`.
+
+### Step 6. Test your lab
+It is important to test to ensure you set everything up correctly.
+
+Click the `Publish` button and then click `View Live Version`.
+
+This will allow you preview the lab as a learner would see it.
+
+If there are any issues, please double check that you followed all the steps above correctly.
