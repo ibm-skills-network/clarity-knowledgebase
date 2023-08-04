@@ -99,7 +99,7 @@ The consumer key and secret can be found in Author Workbench on your course page
 ## Add a Datasette Lab to your Course
 Adding Datasette labs to your course involves a few steps. This guide will outline all the steps you must follow to successfully add a Datasette lab to your course outline.
 
-### Step 1. Follow the guide: Add a (Non-Instructional) Lab to your Course](#add-a-non-instructional-lab-to-your-course)
+### Step 1. Follow the guide: [Add a (Non-Instructional) Lab to your Course](#add-a-non-instructional-lab-to-your-course)
 Start by following the same workflow as adding a non-instructional lab to your course. The difference being now you paste `https://labs.cognitiveclass.ai/login/lti` as your launch url
 
 ### Step 2. Upload your database file to the SN File Library
