@@ -96,6 +96,43 @@ The consumer key and secret can be found in Author Workbench on your course page
 ![image](/img/adding-labs-in-a-course/SN-AW-LTI-Credentials-Coursera.png)
 
 
-Once everything has been added, your final configuration should look something like this:
+## Add a Datasette Lab to your Course
+Adding Datasette labs to your course involves a few steps. This guide will outline all the steps you must follow to successfully add a Datasette lab to your course outline.
 
-![image](/img/adding-labs-in-a-course/SN-AW-coursera-lti-consumer-params.png)
+### Step 1. Follow the guide: Add a (Non-Instructional) Lab to your Course](#add-a-non-instructional-lab-to-your-course)
+Start by following the same workflow as adding a non-instructional lab to your course. The difference being now you paste `https://labs.cognitiveclass.ai/login/lti` as your launch url
+
+### Step 2. Upload your database file to the SN File Library
+You must supply a database file as the value for `sn_asset_library_sqlite_db_url` in your Custom LTI Parameters.
+
+To do this, you should upload a `.db` or `.sqlite` file of your choice to the SN File Library. Head to the `content` tab of your course or guided project.
+
+Here you can open the File Library and upload your database file.
+![image](/img/adding-labs-in-a-course/open-file-library.png)
+
+Once you have uploaded your database file to SN File Library, select the file and copy the asset URL.
+
+![image](/img/adding-labs-in-a-course/copy-file-url.png)
+
+### Step 3. Copy your instructions url
+you will also need an instructions URL.
+
+This can be obtained by clicking opening the `embed` popup on your lab in Author Workbench.
+![image](/img/adding-labs-in-a-course/embed-lab.png)
+
+### Step 4. Add custom parameters to your lti item
+Fill out the custom parameters for your lti item
+
+![image](/img/adding-labs-in-a-course/coursera-custom-params.png)
+
+```
+[
+    "sn_labs_tool=datasette",
+    "sn_labs_filepath=/labs/datasette/lab.db",
+    "sn_asset_library_sqlite_db_url=<DB URL FROM STEP 2>",
+    "sn_asset_library_instructions_url=<INSTRUCTIONS URL FROM STEP 3>"
+]
+```
+
+### Step 5. Test your lab
+Your lab should now be set up to use Datasette. If there are any issues, please double check that you followed all the steps above correctly.
