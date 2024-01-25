@@ -32,9 +32,21 @@ Learners will _not_ have free access to these APIs within their:
 
 ### watsonx.ai
 
-To use the free Skills Network-provided watsonx.ai project, you need to specify `"token": "skills-network"` (not to be confused with `"apikey": "skills-network"` ) and `project_id = "skills-network"`. For example, you can modify [the example from the official documentation for the ibm_watson_machine_learning library](https://www.ibm.com/docs/en/watsonx-as-a-service?topic=models-python-library#example-prompt-a-foundation-model-with-default-parameters):
-```python
+##### IMPORTANT: You must use version `1.0.321` of `ibm-watson-machine-learning`
 
+You can install it by running:
+
+```python
+pip install ibm-watson-machine-learning==1.0.321
+```
+
+##### Usage
+To use the free Skills Network-provided watsonx.ai project, you need to specify `"token": "skills-network"` (not to be confused with `"apikey": "skills-network"` ) and `project_id = "skills-network"`. For example, you can modify [the example from the official documentation for the ibm_watson_machine_learning library](https://www.ibm.com/docs/en/watsonx-as-a-service?topic=models-python-library#example-prompt-a-foundation-model-with-default-parameters):
+
+
+
+You can then use it like this:
+```python
 from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes
 from ibm_watson_machine_learning.foundation_models import Model
 import json
