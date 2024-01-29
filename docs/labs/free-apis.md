@@ -32,28 +32,34 @@ Learners will _not_ have free access to these APIs within their:
 
 ### watsonx.ai
 
-##### IMPORTANT: You must use version `1.0.321` of `ibm-watson-machine-learning`
+#### Versioning
 
-You can install it by running:
+It is recommended that authors follow the instructions below using the default `ibm-watson-machine-learning` version installed with pip. However, after doing so, please pin the version you used for your learners. If you encounter an error with the latest package version and the following instructions, please let us know!
 
-```python
-pip install ibm-watson-machine-learning==1.0.321
+For example:
+```shell
+$ pip install ibm-watson-machine-learning
+Collecting ibm-watson-machine-learning
+  Downloading ibm_watson_machine_learning-1.0.344-py3-none-any.whl.metadata (8.6 kB)
+...
 ```
 
-##### Usage
-To use the free Skills Network-provided watsonx.ai project, you need to specify `"token": "skills-network"` (not to be confused with `"apikey": "skills-network"` ) and `project_id = "skills-network"`. For example, you can modify [the example from the official documentation for the ibm_watson_machine_learning library](https://www.ibm.com/docs/en/watsonx-as-a-service?topic=models-python-library#example-prompt-a-foundation-model-with-default-parameters):
+Your lab instructions would state:
+```shell
+pip install ibm-watson-machine-learning==1.0.344
+```
 
+#### Usage
 
+To use the free Skills Network-provided watsonx.ai project, specify the `"url"` and `project_id = "skills-network"` (make sure to **leave out** `"token"` and `"apikey"`). For example, you can modify [the example from the official documentation for the ibm_watson_machine_learning library](https://www.ibm.com/docs/en/watsonx-as-a-service?topic=models-python-library#example-prompt-a-foundation-model-with-default-parameters) as follows:
 
-You can then use it like this:
 ```python
 from ibm_watson_machine_learning.foundation_models.utils.enums import ModelTypes
 from ibm_watson_machine_learning.foundation_models import Model
 import json
 
 my_credentials = {
-    "url"    : "https://us-south.ml.cloud.ibm.com",
-    "token" : "skills-network" # <--- NOTE: specify "skills-network" as your token (NOT as your apikey) 
+    "url"    : "https://us-south.ml.cloud.ibm.com"
 }
 
 
@@ -63,8 +69,8 @@ project_id  = "skills-network" # <--- NOTE: specify "skills-network" as your pro
 space_id    = None
 verify      = False
 
-model = Model( model_id, my_credentials, gen_parms, project_id, space_id, verify )   
- 
+model = Model( model_id, my_credentials, gen_parms, project_id, space_id, verify )
+
 prompt_txt = "In today's sales meeting, we "
 gen_parms_override = None
 
