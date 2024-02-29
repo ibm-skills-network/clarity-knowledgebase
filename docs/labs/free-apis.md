@@ -54,7 +54,7 @@ pip install ibm-watsonx-ai==0.2.0
 
 #### Usage
 
-To use the free Skills Network-provided watsonx.ai project, specify the `"url"` and `project_id = "skills-network"` (make sure to **leave out** `"token"` and `"apikey"`). For example, you can modify [the example from the official documentation for the ibm_watson_machine_learning library](https://www.ibm.com/docs/en/watsonx-as-a-service?topic=library-inferencing-foundation-model-notebook#example-prompt-a-foundation-model-with-default-parameters) as follows:
+To use the free Skills Network-provided watsonx.ai project, specify the `"url"` and `project_id = "skills-network"` (make sure to **leave out** `"token"` and `"apikey"`). For example, you can modify [the example from the official documentation for the ibm_watsonx_ai library](https://www.ibm.com/docs/en/watsonx-as-a-service?topic=library-inferencing-foundation-model-notebook#example-prompt-a-foundation-model-with-default-parameters) as follows:
 
 ```python
 from ibm_watsonx_ai.foundation_models.utils.enums import ModelTypes
