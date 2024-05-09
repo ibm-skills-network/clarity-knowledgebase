@@ -54,11 +54,11 @@ pip install ibm-watsonx-ai==0.2.0
 
 #### Usage
 
-To use the free Skills Network-provided watsonx.ai project, specify the `"url"` and `project_id = "skills-network"` (make sure to **leave out** `"token"` and `"apikey"`). For example, you can modify [the example from the official documentation for the ibm_watsonx_ai library](https://www.ibm.com/docs/en/watsonx-as-a-service?topic=library-inferencing-foundation-model-notebook#example-prompt-a-foundation-model-with-default-parameters) as follows:
+To use the free Skills Network-provided watsonx.ai project, specify the `"url"` and `project_id = "skills-network"` (make sure to **leave out** `"token"` and `"apikey"`). For example, you can modify [the example from the official documentation for the ibm_watsonx_ai library](https://www.ibm.com/docs/en/watsonx/saas?topic=library-inferencing-foundation-model) as follows:
 
 ```python
 from ibm_watsonx_ai.foundation_models.utils.enums import ModelTypes
-from ibm_watsonx_ai.foundation_models import Model
+from ibm_watsonx_ai.foundation_models import ModelInference
 import json
 
 my_credentials = {
@@ -72,14 +72,21 @@ project_id  = "skills-network" # <--- NOTE: specify "skills-network" as your pro
 space_id    = None
 verify      = False
 
-model = Model( model_id, my_credentials, gen_parms, project_id, space_id, verify )
+model = ModelInference(
+  model_id=model_id,
+  credentials=my_credentials,
+  params=gen_parms,
+  project_id=project_id,
+  space_id=space_id,
+  verify=verify,
+)
 
 prompt_txt = "In today's sales meeting, we "
 gen_parms_override = None
 
-generated_response = model.generate( prompt_txt, gen_parms_override )
+generated_response = model.generate(prompt=prompt_txt, params=gen_parms_override)
 
-print( json.dumps( generated_response, indent=2 ) )
+print(json.dumps(generated_response, indent=2))
 ```
 
 ### OpenAI
