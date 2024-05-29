@@ -18,7 +18,7 @@ Manim can be difficult to install so this tutorial will teach you how to run it 
 docker pull manimcommunity/manim
 ```
 
-  <p>For more information, check out <a href="https://hub.docker.com/r/manimcommunity/manim">mainimcommunity/manim</a></p> 
+  <p>For more information, check out <a href="https://hub.docker.com/r/manimcommunity/manim">mainimcommunity/manim</a></p>
 
   </li>
   <li><p>There are several ways to interact with Manim. We're going to work with Jupyter Lab. For different methods check out <a href="https://hub.docker.com/r/manimcommunity/manim">this link</a>.</p></li>
@@ -43,7 +43,7 @@ Or copy and paste one of these URLs:
 
   <p>Cut and Paste one of the above links in your browser. You should see the following:</p>
 
-  <img width="70%" src={require('@site/static/img/labs/misc/manim_browser.png').default} />
+<img width="70%" src={require('@site/static/img/labs/misc/manim_browser.png').default} />
 
   </li>
   <li>Congratulations! You're now ready to use manim!</li>
@@ -62,6 +62,7 @@ from manim import *
 # To download image used in this example:
 !wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/assets/logos/SN_favicon.png
 ```
+
   </li>
 
   <li><p>Objects in manim are generally divided into three categories:</p>
@@ -93,13 +94,13 @@ class SN(Scene):
 ```python
 %manim SN
 ```
-  
+
   <p>More generally, <code>%manim [name of class]</code> - where <code>[name of class]</code> is the name of the scene class you defined.</p>
 
   </li>
   <li><p>You should see a scene resembling the following:</p>
 
-  <img width="70%" src={require('@site/static/img/labs/misc/manim_scene.png').default} />
+<img width="70%" src={require('@site/static/img/labs/misc/manim_scene.png').default} />
 
   <p>For more information, check out the <a href="https://docs.manim.community/en/stable/">Manim docs</a>.</p>
 
@@ -108,8 +109,8 @@ class SN(Scene):
 
 ### Saving your work
 
-__If you shut down your Docker Container you will lose your work.__
-So you're going to need to download the video and JupyterLab. The lab is straightforward; let's see how to download the video: 
+**If you shut down your Docker Container you will lose your work.**
+So you're going to need to download the video and JupyterLab. The lab is straightforward; let's see how to download the video:
 
 <ol>
   <li><p>Go to the directory <code>./media/Jupiter/</code></p></li>
@@ -117,7 +118,7 @@ So you're going to need to download the video and JupyterLab. The lab is straigh
 
   <p>For example, <code>SN@2022-05-02@02-43-50.mp4 more generally [name of class]@[date].mp4</code> as seen in the image below:</p>
 
-  <img width="30%" src={require('@site/static/img/labs/misc/manim_download_video.png').default} />
+<img width="30%" src={require('@site/static/img/labs/misc/manim_download_video.png').default} />
 
   </li>
   <li><p>Finally, when you close your application you must make sure the container is closed, open a terminal window and type:</p>
