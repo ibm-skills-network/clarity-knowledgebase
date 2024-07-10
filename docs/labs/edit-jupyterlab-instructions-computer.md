@@ -4,30 +4,6 @@ sidebar_position: 6
 
 # Author Jupyter Notebooks on Your Machine
 
-## Downloading Your Project Files
-
-First, if you want to author your jupyter notebooks on your local machine, you need to clone the files.
-
-To do this:
-
- 1. First click advanced on your course or guided project:
-
-![GP or Course Click Advanced Screenshot](/img/labs/edit-lab-instructions/gp-or-course-click-advanced.png)
-
- 2. Then click: Open GitLab Project:
-
-![Open Gitlab Project Screenshot](/img/labs/edit-lab-instructions/open-gitlab-project.png)
-
- 3. And clone using HTTPS or SSH:
-
-![Gitlab Clone Options Screenshot](/img/labs/edit-lab-instructions/gitlab-clone-options.png)
-
- 4. And clone using `git` with your command line in your preferred directory:
-
-```bash
-git clone https://gitlab.com/ibm/skills-network/quicklabs/\<Your GP or Course Title\>
-```
-
 ## Editing using a local installation of JupyterLab:
 
 ### Prerequisites
