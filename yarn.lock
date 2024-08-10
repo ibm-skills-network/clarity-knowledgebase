@@ -7362,9 +7362,9 @@ schema-utils@^4.0.0, schema-utils@^4.0.1:
     ajv-keywords "^5.1.0"
 
 search-insights@^2.15.0:
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/search-insights/-/search-insights-2.16.0.tgz#f1df948a5cd8448460feba315f051dd10b23fb36"
-  integrity sha512-6ukNTOkN2OvJ8SJRmWionpn39OHOov1rx72kyGDYk60CaGrDfmT8wXYzgKLW9VFk+dVVXlUmWQVvrkRvx/x3Mg==
+  version "2.16.2"
+  resolved "https://registry.yarnpkg.com/search-insights/-/search-insights-2.16.2.tgz#fba2734124ddf03c00557674eff9bbdc047f4844"
+  integrity sha512-+KrS5rnYlyWgzoCNJGsNPw7Vv+47Y7Ze7KZ+/9Xls+5BUugEbU2yv1n9JsQOqv+MLKYfg3bxI5K6tYJxXZY8FA==
 
 section-matter@^1.0.0:
   version "1.0.0"
