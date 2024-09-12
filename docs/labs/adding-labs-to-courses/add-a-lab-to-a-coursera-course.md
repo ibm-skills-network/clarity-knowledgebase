@@ -10,7 +10,7 @@ As a Skills Network author, you can create "instructional labs". These are labs 
 
 HTML files will be automatically generated from instructional labs so they can be easliy embedded or linked to from your course. To embed an instructional lab in your course, follow the steps below.
 
-1. On your course page, navigate to the lab you want (under the `Labs` tab) and click "Add to Course"
+1. On your course page, navigate to the lab you want (under the `Labs` tab) and click "Embed"
 
 ![image](/img/adding-labs-in-a-course/SN-AW-add-to-course.png)
 
@@ -57,11 +57,11 @@ HTML files will be automatically generated from instructional labs so they can b
 
 To add a (non-instructional) lab to your course in **Coursera**:
 
-1. In Coursera, go to the week and unit you want your lab to be in and add a new LTI Item.
+1. In Coursera, go to the week and unit you want your lab to be in and add a new App Item.
 
 ![image](/img/adding-labs-in-a-course/SN-Coursera-add-LTI-item.png)
 
-2. Add the following values to the corresponding fields within the LTI Item
+2. Add the following values to the corresponding fields within the App Item
 
 <table>
     <tr>
@@ -88,6 +88,24 @@ The Lab Launch url can be easily found in Author Workbench on your course page. 
 2. Copy the the Lab's Launchg Url by clicking on the `Copy` button.
 
 ![image](/img/adding-labs-in-a-course/SN-AW-coursera-lab-modal-lab-launch-url.png)
+
+3. Now, go back to Coursera and click on `App Manager` on the left side of your screen to create a new app name and configuration.
+
+![image](/img/adding-labs-in-a-course/SN-AW-coursera-lab-app-manager.png)
+
+4. Click on `Add app`
+
+![image](/img/adding-labs-in-a-course/SN-AW-coursera-lab-app-manager-add.png)
+
+5. Now, select `LTI 1.1` and enter the Coursera credentials you copied earlier from the Author Workbench.
+
+![image](/img/adding-labs-in-a-course/SN-AW-coursera-lab-app-manager-lti-input.png)
+
+6. After clicking **Continue**, name your app and set your learner privacy preferences. Then select `Add App`.
+
+![image](/img/adding-labs-in-a-course/SN-AW-coursera-lab-app-manager-lti-config.png)
+
+7. You can return to your 'App Item,' publish your newly created lab, and then launch it.
 
 ### LTI Credentials
 
