@@ -294,3 +294,12 @@ ibmcloud ce application create \
 After the application is ready, it will display the deployed NLP service URL in the terminal. You can then utilize this service URL in the same way as the other pre-existing Watson NLP services provided by Skills Network, and directly incorporate it into any of your other applications that have been deployed to Code Engine.
 
 </details>
+
+
+## Framework-Specific Infomation
+
+### Flutter Web and Cloud IDE
+
+Flutter Web’s hot restart feature, which allows developers to see changes instantly by pressing r in the terminal, doesn’t work as expected in the Cloud IDE due to differences in the environment.
+
+However, there’s a simple workaround with a bash script to mimic the hot reload functionality. Click [here](flutter-web-hot-restart.md) for more information on how to use this workaround.
