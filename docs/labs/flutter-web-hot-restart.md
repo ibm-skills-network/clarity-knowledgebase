@@ -8,6 +8,15 @@ However, in our Cloud IDE, this feature doesn’t work as expected. This is beca
 
 To overcome this limitation, you can use the following bash script to monitor file changes and automatically restart your Flutter web server. The script will ensure that your project is rebuilt and the changes are visible in the browser, just like the hot restart would.
 
+### Prerequisites
+
+For the following script to work, please install `inotify-tools` by running the following commands in the terminal:
+
+```bash
+sudo apt update
+sudo apt install -y inotify-tools
+```
+
 ### Steps to Use the Script:
 
 1.  **Copy and Paste the Bash Script**  
