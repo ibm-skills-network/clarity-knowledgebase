@@ -13,7 +13,8 @@ To overcome this limitation, you can use the following bash script to monitor fi
 1.  **Copy and Paste the Bash Script**  
     Copy the following script into a file (for example, `hot_reload.sh`).
     
-    `#!/bin/bash
+    ```
+    #!/bin/bash
     
     # Path to your Flutter project directory
     PROJECT_DIR="/home/project/hello_world_web/lib"
@@ -66,7 +67,8 @@ To overcome this limitation, you can use the following bash script to monitor fi
     start_server
     
     # Start watching for changes
-    watch_and_reload` 
+    watch_and_reload
+    ``` 
     
 2.  **Set the Correct Project Directory**  
     In the script, make sure to update the line that sets `PROJECT_DIR` to point to your Flutter project directory.
@@ -76,8 +78,10 @@ To overcome this limitation, you can use the following bash script to monitor fi
 3.  **Run the Script**  
     After saving the script, give it execute permissions and run it:
     
-    `chmod +x hot_reload.sh
-    ./hot_reload.sh` 
+    ```
+    chmod +x hot_reload.sh
+    ./hot_reload.sh
+    ``` 
     
     The script will start the Flutter web server, and any time you modify a file in your project, it will detect the change, rebuild the project, and restart the server automatically.
     
