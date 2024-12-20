@@ -1,0 +1,42 @@
+name: Help
+description: Need help? Provide details about the issue you're facing, and we'll assist you.
+title: "[HELP] Briefly describe your issue"
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for reaching out for help! Please fill out the form below so we can
+        better understand your issue.
+        
+        **Helpful Tips:**
+        - Include error messages, screenshots, or code snippets.
+        - Be as detailed as possible about what you're experiencing.
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: Describe your problem
+      description: Provide a clear description of the issue you're facing.
+      placeholder: "What are you trying to achieve? What is going wrong?"
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce the issue
+      description: Provide detailed steps or code snippets so we can replicate the problem.
+      placeholder: "1. Do this\n2. Do that\n3. See the problem"
+      value: ""
+      required: false
+  - type: input
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+      placeholder: "Describe the expected outcome"
+      required: false
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any relevant details, such as your environment (OS, software versions) or logs.
+      placeholder: "Operating system, browser, tool versions, etc."
+      required: false
