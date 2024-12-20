@@ -1,42 +1,58 @@
-name: Help
-description: Need help? Provide details about the issue you're facing, and we'll assist you.
 title: "[HELP] Briefly describe your issue"
+labels: ["help"]
 body:
   - type: markdown
     attributes:
-      value: >
-        Thanks for reaching out for help! Please fill out the form below so we can
-        better understand your issue.
-        
-        **Helpful Tips:**
-        - Include error messages, screenshots, or code snippets.
-        - Be as detailed as possible about what you're experiencing.
+      value: |
+        ## Need Help? 🛠️
+        Please provide as much detail as possible so we can assist you effectively.
+
+        **Tips:**
+        - Be specific about the problem.
+        - Include any error messages, screenshots, or logs.
+        - If applicable, provide code snippets to help reproduce the issue.
+
   - type: textarea
     id: problem-description
     attributes:
-      label: Describe your problem
-      description: Provide a clear description of the issue you're facing.
+      label: Problem description
+      description: Clearly explain the issue you're facing.
       placeholder: "What are you trying to achieve? What is going wrong?"
+    validations:
       required: true
+
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: Steps to reproduce the issue
-      description: Provide detailed steps or code snippets so we can replicate the problem.
-      placeholder: "1. Do this\n2. Do that\n3. See the problem"
-      value: ""
+      label: Steps to reproduce
+      description: List the steps to replicate the issue.
+      placeholder: |
+        1. Open the application
+        2. Navigate to X
+        3. See the error
+    validations:
       required: false
+
   - type: input
     id: expected-behavior
     attributes:
       label: Expected behavior
       description: What did you expect to happen?
-      placeholder: "Describe the expected outcome"
+      placeholder: "Expected outcome"
+    validations:
       required: false
+
   - type: textarea
     id: additional-context
     attributes:
       label: Additional context
-      description: Add any relevant details, such as your environment (OS, software versions) or logs.
+      description: Include any relevant information such as environment details (e.g., OS, browser, software versions).
       placeholder: "Operating system, browser, tool versions, etc."
+    validations:
       required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Thank you for providing the details!
+        We'll get back to you as soon as possible.
