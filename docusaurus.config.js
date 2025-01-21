@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Author Workbench Knowledge Base',
-  tagline: 'Author Workbench Knowledge Base',
+  title: 'Skills Network Knowledge Base',
+  tagline: 'Skills Network Knowledge Base',
   url: 'https://author.skills.network',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
@@ -39,7 +39,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Author Workbench Knowledge Base',
+        title: 'Skills Network Knowledge Base',
         logo: {
           alt: 'Skills Network Logo',
           src: 'img/logo.svg',
