@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # JupyterLab
 
 Jupyterlab is a fully-featured python notebook environment.

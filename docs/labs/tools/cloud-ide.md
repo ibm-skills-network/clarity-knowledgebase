@@ -1,6 +1,3 @@
----
-sidebar_position: 6
----
 # Cloud IDE
 Cloud IDE is a browser integrated development environment running in the cloud. It supports many programming languages and tools right out of the box so that the users can start working right away without the hassle of tedious setups.
 User interface of Cloud IDE, as shown below, comprises of course instructions on the left side and vscode-like development environment on the right side.
