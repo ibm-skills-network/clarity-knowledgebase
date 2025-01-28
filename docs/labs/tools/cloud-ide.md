@@ -299,4 +299,4 @@ After the application is ready, it will display the deployed NLP service URL in 
 
 Flutter Web’s hot restart feature, which allows developers to see changes instantly by pressing r in the terminal, doesn’t work as expected in the Cloud IDE due to differences in the environment.
 
-However, there’s a simple workaround with a bash script to mimic the hot reload functionality. Click [here](flutter-web-hot-restart.md) for more information on how to use this workaround.
+However, there’s a simple workaround with a bash script to mimic the hot reload functionality. Click [here](../flutter-web-hot-restart.md) for more information on how to use this workaround.

@@ -50,7 +50,7 @@ For python-notebook labs, we recommend you use JupyterLite for your learners' be
 
 However, sometimes JupyterLite may not be an option for you - we lay out these cases in the next sections.
 
-For more information on why JupyterLite is preferred over JupyterLab see [JupyterLite vs JupyterLab](./jupyterlite-vs-jupyterlab).
+For more information on why JupyterLite is preferred over JupyterLab see [JupyterLite vs JupyterLab](../jupyterlite-vs-jupyterlab).
 
 <!-- ### Supported libraries
 

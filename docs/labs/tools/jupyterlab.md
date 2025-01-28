@@ -8,7 +8,7 @@ We provide it to authors when [JupyterLite](./jupyterlite) has insufficient comp
 
 We recommend you only use JupyterLab for your labs when necessary. If possible, we recommend you use JupyterLite instead.
 
-For more information on why JupyterLite is preferred over JupyterLab see [JupyterLite vs JupyterLab](./jupyterlite-vs-jupyterlab).
+For more information on why JupyterLite is preferred over JupyterLab see [JupyterLite vs JupyterLab](../jupyterlite-vs-jupyterlab).
 
 ### JupyterLab Caveats
 
