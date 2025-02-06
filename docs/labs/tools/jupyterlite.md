@@ -139,4 +139,4 @@ You can easily convert from JupyterLab to JupyterLite by following [Convert Labs
 
 ## Convert from JupyterLite to JupyterLab
 
-You can easily convert from JupyterLite to JupyterLab by following [Convert Labs from JupyterLab to JupyterLite (and Vice Versa) - Convert JupyterLab to JupyterLite](../convert-between-jupyterlab-and-jupyterlite#convert-jupyterlite-to-jupyterlab).
+You can easily convert from JupyterLite to JupyterLab by following [Convert Labs from JupyterLab to JupyterLite (and Vice Versa) - Convert JupyterLite to JupyterLab](../convert-between-jupyterlab-and-jupyterlite#convert-jupyterlite-to-jupyterlab).
