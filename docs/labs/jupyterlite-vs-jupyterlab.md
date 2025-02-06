@@ -20,9 +20,13 @@ This page explains the differences between JupyterLite and JupyterLab - and whic
 In general, we recommend authors use JupyterLite:
  - __For the learner's best experience__
  - If all required libraries are compatible.
-   - See [JupyterLite - Unsupported Libraries](./tools/jupyterlite#unsupported-libraries).
- - Only low-medium rumtime code cells.
-   - See [JupyterLite - Additional Caveats](./tools/jupyterlite#additional-caveats).
+   - Check [JupyterLite - Supported Libraries](./tools/jupyterlite#supported-libraries) and [JupyterLite - Unsupported or Partially Supported Libraries](./tools/jupyterlite#unsupported-or-partially-supported-libraries) for details.
+ - If you do not have highly cpu-intensive code.
+   - Check [JupyterLite - Additional Caveats](./tools/jupyterlite#additional-caveats) for details.
+ - If you are not using large (>100MB+) datasets.
+   - Check [JupyterLite - Additional Caveats](./tools/jupyterlite#additional-caveats) for details.
+ - If you are not using libraries that must connect to the internet to work.
+   - Check [JupyterLite - Unsupported or Partially Supported Libraries](./tools/jupyterlite#unsupported-or-partially-supported-libraries) for details and [JupyterLite - Downloading Data](./tools/jupyterlite#downloading-data) for workarounds that might work for you.
 
 ## When should you use JupyterLab?
 
