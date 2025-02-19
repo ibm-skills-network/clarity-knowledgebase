@@ -2,66 +2,6 @@
 
 JupyterLite is a responsive python notebook environment we provide for your learners' best experience.
 
-## Using JupyterLite
-
-### Installing Packages
-
-Installing packages in JupyterLab is usually done with a package manager such as `pip`, `conda` or `mamba` like:
-
-```
-!pip install numpy pandas
-!conda install -c conda-forge numpy pandas
-!mamba install numpy pandas
-```
-
-In JupyterLite you simply use the `%pip` magic command:
-
-```python
-%pip install numpy pandas
-```
-
-For [pure python packages](#libraries-from-pypi) we ***strongly recommend*** pinning the python version you wish to install:
-```python
-%pip install optuna==4.2.0
-```
-
-For additional information about supported packages and caveats read the [Supported Libraries](#supported-libraries), [Unsupported or Partially Supported Libraries](#unsupported-or-partially-supported-libraries) and [Additional Caveats](#additional-caveats) sections.
-
-### Downloading Data
-
-You may be accustomed to loading data the following way:
-
-```python
-import pandas as pd
-
-URL = 'https://www.url.to/my/dataset.csv'
-
-df = pd.read_csv(URL)
-```
-
-In JupyterLite, you must use the following method instead:
-
-```python
-import pandas as pd
-import skillsnetwork
-
-URL = 'https://www.url.to/my/dataset.csv'
-
-await skillsnetwork.download_dataset(URL)
-df = pd.read_csv('dataset.csv')
-```
-
-### Best practices
-
-Follow these best practices when creating JupyterLite labs:
-
- - Ask your learners to launch the lab in the Chrome browser
-   - Chrome is recommended for JupyterLite, though Firefox has been shown to work in many cases
- - Do not ask your learners to restart the kernel after `%pip install`
-   - Restarting the kernel is common after installing packages in JupyterLab. However, restarting the kernel after installing packages in JupyterLite will make those packages unavailable in JupyterLite
- - Pin [pure python package](#libraries-from-pypi) versions when installing from [PyPI](https://pypi.org/)
-
-
 ## Should you use JupyterLite?
 
 For python-notebook labs, we ***strongly recommend*** you use JupyterLite for your learners' best experience.
@@ -86,7 +26,7 @@ Many popular python science libraries are compadible with JupyterLite:
 ### Supported Libraries
 
 #### Preinstalled libraries
-JupyterLite comes preinstalled with a set of Python packages. You can find a list of these packages [here](https://pyodide.org/en/latest/usage/packages-in-pyodide.html). The preinstalled packages include some popular Python libraries such as `numpy`, `pandas` and `sklearn`. In order to use these packages, you simply have to import them after an optional `%pip install`:
+JupyterLite comes with a set of preinstalled Python packages. You can find a list of these packages [here](https://pyodide.org/en/latest/usage/packages-in-pyodide.html). The preinstalled packages include some popular Python libraries such as `numpy`, `pandas` and `sklearn`. In order to use these packages, you simply have to import them after an optional `%pip install`:
 ```python
 ### OPTIONAL ###
 %pip install numpy pandas scikit-learn
@@ -132,6 +72,67 @@ Even if your lab uses libraries supported by JupyterLite, there are specific sce
    - JupyterLite does not allow you to upgrade or downgrade [preinstalled](#preinstalled-libraries) packages ***unless*** they are [pure python packages](#libraries-from-pypi). For instance, `%pip install numpy==1.26.3` will fail, but `%pip install tqdm==4.67.1` will succeed even if another version of `tqdm` is [preinstalled](#preinstalled-libraries).
  - You need to use two or more versions of a Python package in one notebook
    - JupyterLite does not allow you to upgrade or downgrade packages once they have been `%pip install`ed or `import`ed. For instance, `%pip install seaborn==0.13.1` followed by `%pip install seaborn==0.13.2` will fail at the second install.
+
+## Using JupyterLite
+
+### Installing Packages
+
+Installing packages in JupyterLab is usually done with a package manager such as `pip`, `conda` or `mamba` like:
+
+```
+!pip install numpy pandas
+!conda install -c conda-forge numpy pandas
+!mamba install numpy pandas
+```
+
+In JupyterLite you simply use the `%pip` magic command:
+
+```python
+%pip install numpy pandas
+```
+
+For [pure python packages](#libraries-from-pypi) we ***strongly recommend*** pinning the version you wish to install:
+```python
+%pip install optuna==4.2.0
+```
+
+For additional information about supported packages and caveats read the [Supported Libraries](#supported-libraries), [Unsupported or Partially Supported Libraries](#unsupported-or-partially-supported-libraries) and [Additional Caveats](#additional-caveats) sections.
+
+### Downloading Data
+
+You may be accustomed to loading data the following way:
+
+```python
+import pandas as pd
+
+URL = 'https://www.url.to/my/dataset.csv'
+
+df = pd.read_csv(URL)
+```
+
+In JupyterLite, you must use the following method instead:
+
+```python
+import pandas as pd
+import skillsnetwork
+
+URL = 'https://www.url.to/my/dataset.csv'
+
+await skillsnetwork.download_dataset(URL)
+df = pd.read_csv('dataset.csv')
+```
+
+Relying on online sources carries the risk of labs becoming non-functional if those sources are moved or become unavailable. Therefore, we ***strongly recommend*** transferring these data sources to the Skills Network File Library before using them in your labs. To upload files to the Skills Network File Library, follow the steps provided in [Skills Network File Library -  Access File Library within Jupyterlite or Jupyterlab](../jupyterlab-filelibrary.md#access-file-library-within-jupyterlite-or-jupyterlab).
+
+
+### Best practices
+
+Follow these best practices when creating JupyterLite labs:
+
+ - Do not ask your learners to restart the kernel after `%pip install`
+   - Restarting the kernel is common after installing packages in JupyterLab. However, restarting the kernel after installing packages in JupyterLite will make those packages unavailable in JupyterLite
+ - Pin [pure python package](#libraries-from-pypi) versions when installing from [PyPI](https://pypi.org/).
+   - For instance, instead of using `%pip install optuna`, use `%pip install optuna==4.2.0`
 
 ## Convert from JupyterLab to JupyterLite
 
