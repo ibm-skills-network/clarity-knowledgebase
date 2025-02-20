@@ -47,44 +47,41 @@ For example, a good guided project might be building and deploying a movie recom
 You will see several options for creating your GP:
 
 - **Create a practice project**: Ideal for your first GP. This GP is meant for experimenting purpose only and is not meant to be published.
-- **Create with AI (Preview)**: AI can help generate content based on your topic. However, it is strongly recommended to review all AI-generated content.
 - **I want to do it myself**: Fully customize your own GP from scratch.
-
-> **Tip:** If you select the AI option, carefully review and edit all generated content.
 
 In this Quick Start guide, we will focus on the `I want to do it myself` option. 
 
-### 5. Fill Out Required Fields
+### 5. Add Metadata
 
-> **Tip:** You can edit the title, short description, long description, and cover image even after your GP is created.
+> **Tip:** You can edit the title, short description, long description, cover image and other metadata after your GP is created.
 
-Instead of using the AI assistant, you can manually draft the GP front page yourself. When you select "I want to do it myself," you will be directed to the GP front page, which resembles the final page in the `Create with AI` option. Here, you will need to fill in all the details manually.
-
-> Make sure to optimize the title, short description, and long description for SEO, ensuring they contain relevant keywords while staying true to the content of your GP.
+> Make sure to optimize all metadata for SEO, ensuring they contain keywords that would help learners find your project. In addition, try to write engaging and enticing descriptions that will convince learners that your guided project is worth doing. We recommend you spare any boring details here and focus instead on the value learners will gain from completing your project.
 
 Below is the list of all the fields you must fill in before proceeding:
 
-- **Title**: Choose a descriptive and engaging title.
-- **Platform**: Select **Skills Network Portals**.
+- **Title**: This is the first thing learners will see, make it interesting!
+- **Platform**: Select **Skills Network Portals** unless otherwise instructed.
 - **Language**: Choose the language for your GP.
-- **Topic**: Select the appropriate topic for your GP.
-- **Difficulty Level**: Choose the difficulty level for your audience.
-- **Provider**: Ensure **IBM Skills Network** is selected under "Who will this be offered by?"
+- **Topic**: Select the most relevant topic for your GP.
+- **Difficulty Level**: Consider the skill level of your intended audience.
+- **Offered By**: Select the organization you're contributing on behalf or, or yourself if this is an independent project.
 - **Skills**: Select the skills this project will help build.
-- **Industry**: Select the industry or leave blank if the GP is general.
+- **Industry**: Leave this blank unless your project is specifically intended for learners in a particular industry.
 - **Short Description**: Write a brief (160-character) description for your GP. Follow the tip above for a good short description.
 - **Long Description**: Follow the provided template, and modify it after the project is created. Follow the tip above for a good long description.
-- **Release Date**: Choose a tentative release date.
+- **Release Date**: Choose a tentative release date, you can always change this.
 
 Once finished, click **Create Guided Project**. The page will refresh, and you will be redirected to the landing page of your newly created GP.
 
 ### 6. Create Your Lab
-Use labs to create interactive and engaging learning experiences. These labs typically provide concise instructions alongside a browser-based code editor in CloudIDE or allow direct execution through a Jupyter Notebook in Jupyter Lab. Learners can write, run, and deploy code seamlessly within the in-browser editor—eliminating the need for package installations or switching between environments.
 
-- On the top right corner, click **Create Lab**. This will create a brand new lab and add it as a resource in your guided project. You'll be able to reuse this lab in other guided projects and courses if you'd like!
-- Alternatively, you can click the dropdown next to "Create Lab" and add in existing labs you would like to reuse
+Labs are a crucial component of Guided Projects, it's where learners will follow along and build your project. A popular general-purpose lab tool we provide is Cloud IDE. This environment provides a code editor and a terminal with your instructions on one half of the screen. This seamless integration eliminates the need for package installations or switching between environments, making it easier for learners to focus on the building aspects of your project.
 
-> **Tip**: Check out the [**Labs - Create a lab**](/labs/create-a-lab.md) wiki page to learn more about Skills Network labs and how to create a successful lab.
+- Go to the "Labs" tab of your guided project
+- In the top right corner, click **Create Lab**. This will create a new lab and add it as a resource in your guided project. Labs are reusable, so you can incorporate them into other guided projects and courses.
+- Alternatively, you can click the dropdown next to "Create Lab" to add existing labs you wish to reuse.
+
+> **Tip**: When designing your lab, ensure it aligns with the learning objectives of your Guided Project. Provide clear, step-by-step instructions that build upon the knowledge gained in previous sections. Consider incorporating real-world applications or case studies to enhance the learning experience. For more detailed guidance, visit the [**Labs - Create a lab**](/labs/create-a-lab.md) wiki page.
 
 ### 7. Submit your GP for Review
 - Once you feel your GP is complete and ready for learners to start taking it, you can submit it for review.
@@ -92,3 +89,11 @@ Use labs to create interactive and engaging learning experiences. These labs typ
 - Once you submit for review, a member of our editorial team will be assigned to review your project. If any changes are required you'll get detailed feedback and have the opportunity to resubmit for review. If everything looks good, it will be approved and available on the Skills Network Catalog. Keep an eye on your email!
 
 ### 8. Congratulations, your GP is published!
+
+#### How do learners access my guided project?
+
+Learners do not access your guided project directly through Author Workbench. Instead, they will access your guided project through a [Skills Network Portal](https://skills.network/portals/enterprise).
+
+To use a simplified analogy, think of yourself as a mobile app developer and your guided project as a mobile app. Author Workbench is your development environment and the [Skills Network Catalog](https://catalog.skills.network/) is the app store. Skills Network Portals are like the phones that install a copy of the app and allow users to launch the apps.
+
+As a Skills Network Author, you can easily create guided projects for [Skills Network Portals](https://skills.network/portals/enterprise). This includes our community initiative, [cognitiveclass.ai](https://cognitiveclass.ai). However, publishing to other destinations such as [Coursera](https://www.coursera.org/partners/ibm-skills-network) or [edX.org](https://www.edx.org/school/ibm) will require you to be a partner with that destination.
