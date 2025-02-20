@@ -81,7 +81,7 @@ Labs are a crucial component of Guided Projects, it's where learners will follow
 - In the top right corner, click **Create Lab**. This will create a new lab and add it as a resource in your guided project. Labs are reusable, so you can incorporate them into other guided projects and courses.
 - Alternatively, you can click the dropdown next to "Create Lab" to add existing labs you wish to reuse.
 
-> **Tip**: When designing your lab, ensure it aligns with the learning objectives of your Guided Project. Provide clear, step-by-step instructions that build upon the knowledge gained in previous sections. Consider incorporating real-world applications or case studies to enhance the learning experience. For more detailed guidance, visit the [**Labs - Create a lab**](/labs/create-a-lab.md) wiki page.
+> **Tip**: When designing your lab, ensure it aligns with the learning objectives of your Guided Project. Provide clear, step-by-step instructions that build upon the knowledge gained in previous sections. Consider incorporating real-world applications or case studies to enhance the learning experience. For more detailed guidance, visit [**Labs - Quick Start**](/labs/quick-start).
 
 ### 7. Submit your GP for Review
 - Once you feel your GP is complete and ready for learners to start taking it, you can submit it for review.
