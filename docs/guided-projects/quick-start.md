@@ -4,9 +4,15 @@ sidebar_position: 1
 
 # Quick Start
 
-This guide explains how to create and publish a Guided Project (GP) step by step.
+This guide will walk you through the process of creating your first Guided Project (GP) in Author Workbench.
 
-## Steps to Create and Publish a Guided Project (GP)
+## What is a Guided Project (GP)?
+
+Guided projects are short, interactive lessons that you can finish in one sitting, usually in less than an hour. They guide learners step-by-step to complete a real project.
+
+For example, a good guided project might be building and deploying a movie recommender using Node.js. As an author, you would first make this project yourself and then write easy-to-follow instructions for learners. With Author Workbench, creating these projects is simple, and learners can join in without needing to set anything up. Each guided project should have at least one hands-on lab. The lab will be where you provide the instructions and we provide the environment for learners to follow along.
+
+## Steps to Create and Publish a Guided Project
 
 ### 1. Plan Out Your GP
 #### Define the Purpose and Audience
