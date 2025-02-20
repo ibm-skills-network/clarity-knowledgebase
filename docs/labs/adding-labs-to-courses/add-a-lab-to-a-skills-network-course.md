@@ -1,4 +1,9 @@
-# Add a Lab to your Skills Network Course
+---
+sidebar_position: 1
+---
+
+# Skills Network Portals
+
 Once you have created a lab, you then need to **add it to your course via Studio**. When you are adding a lab to your course, you **embed your lab into a unit of your course**. This way, learners will naturally progress through the course, and complete your labs as they go.
 
 ## Add an Instructional Lab to your Course
