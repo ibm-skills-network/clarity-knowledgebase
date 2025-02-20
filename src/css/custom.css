@@ -6,25 +6,25 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: rgb(79 70 229);
-  --ifm-color-primary-dark: rgb(67 56 202);
-  --ifm-color-primary-darker: rgb(55 48 163);
-  --ifm-color-primary-darkest: rgb(49 46 129);
-  --ifm-color-primary-light: rgb(99 102 241);
-  --ifm-color-primary-lighter: rgb(129 140 248);
-  --ifm-color-primary-lightest: rgb(165 180 252);
+  --ifm-color-primary: #8b5cf6;        /* violet-500 */
+  --ifm-color-primary-dark: #7c3aed;   /* violet-600 */
+  --ifm-color-primary-darker: #6d28d9;  /* violet-700 */
+  --ifm-color-primary-darkest: #5b21b6; /* violet-800 */
+  --ifm-color-primary-light: #a78bfa;   /* violet-400 */
+  --ifm-color-primary-lighter: #c4b5fd; /* violet-300 */
+  --ifm-color-primary-lightest: #ddd6fe; /* violet-200 */
   --ifm-code-font-size: 95%;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #8b5cf6;
-  --ifm-color-primary-dark: #7c3aed;
-  --ifm-color-primary-darker: #6d28d9;
-  --ifm-color-primary-darkest: #5b21b6;
-  --ifm-color-primary-light: #a78bfa;
-  --ifm-color-primary-lighter: #c4b5fd;
-  --ifm-color-primary-lightest: #ddd6fe;
+  --ifm-color-primary: #a78bfa;        /* violet-400 - brighter base for dark mode */
+  --ifm-color-primary-dark: #8b5cf6;   /* violet-500 */
+  --ifm-color-primary-darker: #7c3aed; /* violet-600 */
+  --ifm-color-primary-darkest: #6d28d9; /* violet-700 */
+  --ifm-color-primary-light: #c4b5fd;   /* violet-300 */
+  --ifm-color-primary-lighter: #ddd6fe; /* violet-200 */
+  --ifm-color-primary-lightest: #ede9fe; /* violet-100 */
 }
 
 .docusaurus-highlight-code-line {
