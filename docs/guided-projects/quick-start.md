@@ -47,6 +47,7 @@ For example, a good guided project might be building and deploying a movie recom
 You will see several options for creating your GP:
 
 - **Create a practice project**: Ideal for your first GP. This GP is meant for experimenting purpose only and is not meant to be published.
+    > Note: Labs created in practice projects remain available beyond 30 days; only the project itself is deleted beyond 30 days. The lab can still be used in other courses or projects after this period. Additionally, files uploaded to the content library from practice projects are not deleted after 30 days.
 - **I want to do it myself**: Fully customize your own GP from scratch.
 
 In this Quick Start guide, we will focus on the `I want to do it myself` option. 
