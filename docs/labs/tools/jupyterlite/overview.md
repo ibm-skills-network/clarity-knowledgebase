@@ -1,4 +1,8 @@
-# JupyterLite
+---
+sidebar_position: 1
+---
+
+# Overview
 
 JupyterLite is a responsive python notebook environment we provide for your learners' best experience.
 
@@ -8,7 +12,7 @@ For python-notebook labs, we ***strongly recommend*** you use JupyterLite for yo
 
 However, sometimes JupyterLite may not be an option for you - we lay out these cases in the next sections.
 
-For more information on why JupyterLite is preferred over JupyterLab see [JupyterLite vs JupyterLab](../jupyterlite-vs-jupyterlab).
+For more information on why JupyterLite is preferred over JupyterLab see [JupyterLite vs JupyterLab](/docs/labs/misc/jupyterlite-vs-jupyterlab).
 
 <!-- ### Supported libraries
 
@@ -58,11 +62,11 @@ The following popular python libraries are not supported or only partially suppo
  - `requests`: this package is [preinstalled](#preinstalled-libraries) but under typical usage requires unrestricted access to the internet
  - `sqlite3`: works only with in-memory databases; for example `con = sqlite3.connect(":memory:")`
 
-If your lab requires an unsupported package and a suitable alternative or workaround does not exist, you should use [JupyterLab](./jupyterlab) instead.
+If your lab requires an unsupported package and a suitable alternative or workaround does not exist, you should use [JupyterLab](/docs/labs/tools/jupyterlab/overview) instead.
 
 ### Additional Caveats
 
-Even if your lab uses libraries supported by JupyterLite, there are specific scenarios where you may want to consider using [JupyterLab](./jupyterlab):
+Even if your lab uses libraries supported by JupyterLite, there are specific scenarios where you may want to consider using [JupyterLab](/docs/labs/tools/jupyterlab/overview):
 
  - Your lab has highly cpu-intensive code.
    - For example, `sklearn.manifold.TSNE.fit_transform` was found to be impractical in JupyterLite.
@@ -122,7 +126,7 @@ await skillsnetwork.download_dataset(URL)
 df = pd.read_csv('dataset.csv')
 ```
 
-Relying on online sources carries the risk of labs becoming non-functional if those sources are moved or become unavailable. Therefore, we ***strongly recommend*** transferring these data sources to the Skills Network File Library before using them in your labs. To upload files to the Skills Network File Library, follow the steps provided in [Skills Network File Library -  Access File Library within Jupyterlite or Jupyterlab](../jupyterlab-filelibrary.md#access-file-library-within-jupyterlite-or-jupyterlab).
+Relying on online sources carries the risk of labs becoming non-functional if those sources are moved or become unavailable. Therefore, we ***strongly recommend*** transferring these data sources to the Skills Network File Library before using them in your labs. To upload files to the Skills Network File Library, follow the steps provided in [Skills Network File Library -  Access File Library within Jupyterlite or Jupyterlab](/docs/labs/features/file-library#access-file-library-within-jupyterlite-or-jupyterlab).
 
 
 ### Best practices
@@ -136,8 +140,8 @@ Follow these best practices when creating JupyterLite labs:
 
 ## Convert from JupyterLab to JupyterLite
 
-You can easily convert from JupyterLab to JupyterLite by following [Convert Labs from JupyterLab to JupyterLite (and Vice Versa) - Convert JupyterLab to JupyterLite](../convert-between-jupyterlab-and-jupyterlite#convert-jupyterlab-to-jupyterlite).
+You can easily convert from JupyterLab to JupyterLite by following [Convert Labs from JupyterLab to JupyterLite (and Vice Versa) - Convert JupyterLab to JupyterLite](/docs/labs/tools/jupyterlab/convert-to-jupyterlite).
 
 ## Convert from JupyterLite to JupyterLab
 
-You can easily convert from JupyterLite to JupyterLab by following [Convert Labs from JupyterLab to JupyterLite (and Vice Versa) - Convert JupyterLite to JupyterLab](../convert-between-jupyterlab-and-jupyterlite#convert-jupyterlite-to-jupyterlab).
+You can easily convert from JupyterLite to JupyterLab by following [Convert Labs from JupyterLab to JupyterLite (and Vice Versa) - Convert JupyterLite to JupyterLab](/docs/labs/tools/jupyterlite/convert-to-jupyterlab).

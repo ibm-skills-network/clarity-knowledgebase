@@ -1,36 +1,40 @@
-# JupyterLab
+---
+sidebar_position: 1
+---
+
+# Overview
 
 Jupyterlab is a fully-featured python notebook environment.
 
-We provide it to authors when [JupyterLite](./jupyterlite) has insufficient compatibility.
+We provide it to authors when [JupyterLite](/docs/labs/tools/jupyterlite/overview) has insufficient compatibility.
 
 ## Should you use JupyterLab?
 
-If possible, we ***strongly recommend*** you use [JupyterLite](./jupyterlite) instead of JupyterLab.
+If possible, we ***strongly recommend*** you use [JupyterLite](/docs/labs/tools/jupyterlite/overview) instead of JupyterLab.
 
-For more information on why [JupyterLite](./jupyterlite) is preferred over JupyterLab see [JupyterLite vs JupyterLab](../jupyterlite-vs-jupyterlab).
+For more information on why [JupyterLite](/docs/labs/tools/jupyterlite/overview) is preferred over JupyterLab see [JupyterLite vs JupyterLab](/docs/labs/misc/jupyterlite-vs-jupyterlab).
 
-For information on [JupyterLite](./jupyterlite)'s limitations and suitability for your lab, visit [JupyterLite - Should you use JupyterLite?](./jupyterlite#should-you-use-jupyterlite).
+For information on [JupyterLite](/docs/labs/tools/jupyterlite/overview)'s limitations and suitability for your lab, visit [Should you use JupyterLite?](/docs/labs/tools/jupyterlite/overview#should-you-use-jupyterlite).
 
-You should only use JupyterLab if you have confirmed, based on the above resources, that [JupyterLite](./jupyterlite) is unsuitable for your purposes.
+You should only use JupyterLab if you have confirmed, based on the above resources, that [JupyterLite](/docs/labs/tools/jupyterlite/overview) is unsuitable for your purposes.
 
 ## JupyterLab Types
 
-We offer two distinct versions of JupyterLab: JupyterLab Current and JupyterLab Classic. If you cannot use [JupyterLite](./jupyterlite) for your Jupyter notebook lab, we ***strongly recommend*** using JupyterLab Current unless you need some of the unique features of JupyterLab Classic. JupyterLab Current offers:
+We offer two distinct versions of JupyterLab: JupyterLab Current and JupyterLab Classic. If you cannot use [JupyterLite](/docs/labs/tools/jupyterlite/overview) for your Jupyter notebook lab, we ***strongly recommend*** using JupyterLab Current unless you need some of the unique features of JupyterLab Classic. JupyterLab Current offers:
 
 - Python 3.12
 - A recent kernel for R
 - Faster loading than JupyterLab Classic
-- Free access to watsonx.ai, OpenAI, and Anthropic APIs; see [Free APIs Available in Skills Network Labs](../free-apis.md) for details and limitations
+- Free access to watsonx.ai, OpenAI, and Anthropic APIs; see [Free APIs Available in Skills Network Labs](/docs/labs/features/free-apis) for details and limitations
 
 In contrast, JupyterLab Classic offers:
 - Python 3.7
 - An older kernel for R
 - Kernels for Julia and Swift
 - Slower loading than JupyterLab Current
-- Free access to the OpenAI API, but not the watsonx.ai and Anthropic APIs; see [Free APIs Available in Skills Network Labs](../free-apis.md) for details and limitations
+- Free access to the OpenAI API, but not the watsonx.ai and Anthropic APIs; see [Free APIs Available in Skills Network Labs](/docs/labs/features/free-apis) for details and limitations
 
-Since JupyterLab Current is ***strongly recommended*** over JupyterLab Classic, we have provided a guide to help you convert JupyterLab Classic labs to JupyterLab Current labs. You can find the guide at [Upgrading to the Latest Version of JupyterLab](../upgrade-jupyterlab.md).
+Since JupyterLab Current is ***strongly recommended*** over JupyterLab Classic, we have provided a guide to help you convert JupyterLab Classic labs to JupyterLab Current labs. You can find the guide at [Upgrading to the Latest Version of JupyterLab](/docs/labs/misc/upgrade-lab-tool-version).
 
 ## Using JupyterLab
 
@@ -104,7 +108,7 @@ df = pd.read_csv(archive.open('netflix_titles.csv'))
 df.sample(5)
 ```
 
-Relying on online sources carries the risk of labs becoming non-functional if those sources are moved or become unavailable. Therefore, we **strongly recommend** transferring these data sources to the Skills Network File Library before using them in your labs. To upload files to the Skills Network File Library, follow the steps provided in [Skills Network File Library -  Access File Library within Jupyterlite or Jupyterlab](../jupyterlab-filelibrary.md#access-file-library-within-jupyterlite-or-jupyterlab).
+Relying on online sources carries the risk of labs becoming non-functional if those sources are moved or become unavailable. Therefore, we **strongly recommend** transferring these data sources to the Skills Network File Library before using them in your labs. To upload files to the Skills Network File Library, follow the steps provided in [Skills Network File Library -  Access File Library within Jupyterlite or Jupyterlab](/docs/labs/features/file-library#access-file-library-within-jupyterlite-or-jupyterlab).
 
 ### JupyterLab Best Practices
 
@@ -179,8 +183,8 @@ Should run with no errors.
 
 ## Convert from JupyterLab to JupyterLite
 
-You can easily convert from JupyterLab to JupyterLite by following [Convert Labs from JupyterLab to JupyterLite (and Vice Versa) - Convert JupyterLab to JupyterLite](../convert-between-jupyterlab-and-jupyterlite#convert-jupyterlab-to-jupyterlite).
+You can easily convert from JupyterLab to JupyterLite by following [Convert JupyterLab to JupyterLite](/docs/labs/tools/jupyterlab/convert-to-jupyterlite).
 
 ## Convert from JupyterLite to JupyterLab
 
-You can easily convert from JupyterLite to JupyterLab by following [Convert Labs from JupyterLab to JupyterLite (and Vice Versa) - Convert JupyterLite to JupyterLab](../convert-between-jupyterlab-and-jupyterlite#convert-jupyterlite-to-jupyterlab).
+You can easily convert from JupyterLite to JupyterLab by following [Convert JupyterLite to JupyterLab](/docs/labs/tools/jupyterlite/convert-to-jupyterlab).

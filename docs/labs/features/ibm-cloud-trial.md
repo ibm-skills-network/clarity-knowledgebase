@@ -1,7 +1,4 @@
----
-sidebar_position: 8
----
-# Claim an IBM Cloud Trial code
+# IBM Cloud Trial
 
 ## Markdown based labs
 

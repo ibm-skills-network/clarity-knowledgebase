@@ -1,4 +1,4 @@
-# Flutter Web Hot Restart in Cloud IDE
+# Flutter Web Hot Restart
 
 Flutter Web has awesome hot restart feature that allows you to see your changes in the browser instantly by pressing **r** in the terminal. This feature automatically refreshes the web app without needing to manually stop and start the server each time you make a change.
 
@@ -96,4 +96,3 @@ sudo apt install -y inotify-tools
     
 4.  **Stop the Script**  
     To stop the script, simply press `Ctrl + C` in the terminal. This will cleanly stop the server.
-    

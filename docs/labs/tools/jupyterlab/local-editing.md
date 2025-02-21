@@ -1,8 +1,4 @@
----
-sidebar_position: 6
----
-
-# Author Jupyter Notebooks on Your Machine
+# Local Editing
 
 ## Editing using a local installation of JupyterLab:
 

@@ -1,6 +1,6 @@
-# Skills Network File Library
+# File Library
 
-Skills Network provides a file library to which authors can add files (for instance, datasets or photos) that they use in their labs, courses, and guided projects. Since external resources can become unavailable at any time when those resources are removed or updated, authors are ***strongly encouraged*** to upload files they use to the file library.
+Skills Network provides a file library to which authors can add files (for instance, datasets or photos) that they use in their labs, courses, and guided projects. Since external resources can become unavailable at any time when those resources are removed or updated, authors are **strongly encouraged** to upload files they use to the file library.
 
 ## Access File Library within Author Workbench
 
