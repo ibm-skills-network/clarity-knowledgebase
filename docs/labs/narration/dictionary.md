@@ -1,3 +1,7 @@
+---
+title: Dictionary
+---
+
 # Narration Pronounciation Dictionary
 
 This is the narration dictionary page which is used to teach our AI narrator how to pronounce difficult acronyms and words (mostly libraries and products). For example if the narration pronounces, "IBM" as "ih-buh-mmm" instead of "eye-bee-em" this is the place to fix it!
