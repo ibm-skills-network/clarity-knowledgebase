@@ -4,14 +4,19 @@ title: Dictionary
 
 # Narration Pronounciation Dictionary
 
-This is the narration dictionary page which is used to teach our AI narrator how to pronounce difficult acronyms and words (mostly libraries and products). For example if the narration pronounces, "IBM" as "ih-buh-mmm" instead of "eye-bee-em" this is the place to fix it!
+When the Author Workbench generates audio for your Articles and Instructional Labs they sometimes contains words (e.g. acronyms, libraries, products, etc.) that are mispronounced. This page is used to teach our AI narrator how to pronounce these difficult words correctly.
 
-## How to add a new word to the pronounciation dictionary
+For example if the narration pronounces, "IBM" as "ih-buh-mmm" instead of "eye-bee-em" this is the place to fix it!
+
+## How to fix the pronounciation of your audio
 
 1. Update the JSON below (within the `START DICTIONARY` and `END DICTIONARY` comments) with the new update:
   - Key: The word as seen in the instructions in _lowercase_
   - Value: The correct pronounciation spelling (your best guess, use the existing mappings for good examples)
-3. Create a new PR of your changes
+2. Create a new PR of your changes
+3. Wait for the PR to be approved
+4. When the PR is approved the word has been successfully added to the Narration Pronounciation Dictionary.
+5. Re-generate the audio for your Article or Instructional Lab
 
 ## Important Notes:
 
