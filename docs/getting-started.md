@@ -9,7 +9,7 @@ Welcome to the **Author Knowledgebase**. We are in the process of building this 
 
 ## What is Author Workbench?
 
-Author Workbench is a content authoring console created by IBM Skills Network. With Author Workbench, you can easily create, publish and manage **Courses, Guided Projects, Articles and Videos**.
+Author Workbench is a content authoring console created by IBM Skills Network. With Author Workbench, you can easily create, publish and manage **Courses, Guided Projects and Articles**.
 
 ## Why use Author Workbench?
 
@@ -34,15 +34,3 @@ Author Workbench is a content authoring console created by IBM Skills Network. W
 - Quick-read educational content
 - Perfect for tutorials, how-tos, and technical explanations
 - Support for code snippets and technical diagrams
-
-### Videos
-- Create and manage educational video content
-- We automatically generate transcripts with translations
-- Integrate with course materials
-
-<!-- WIP -->
-<!-- ## Next Steps
-
-- [Setting Up Your Author Profile](#)
-- [Creating Your First Guided Project](#)
-- [Creating Your First Course](#) -->
