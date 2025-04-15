@@ -77,6 +77,10 @@ For example if the narration pronounces, "IBM" as "ih-buh-mmm" instead of "eye-b
   "kubecost": "cube-cost",
   "ripasso": "Wreepasso",
   "siem": "Simm",
+  "sql": "ess-queue-ell",
+  "sqlite": "ess-queue-ell-lite",
+  "mysql": "my-ess-queue-ell",
+  "mssql": "em-ess-ess-queue-ell",
   "z/vm": "zed-vm"
 }
 // END DICTIONARY
