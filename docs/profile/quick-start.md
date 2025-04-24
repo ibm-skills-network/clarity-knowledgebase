@@ -25,5 +25,4 @@ You can also manage your private account settings and connected accounts on this
 - Provide links to your professional social media accounts.
 - We always recommend you add a secondary connected account here as a backup login.
 
-That's it! You've successfully created and edited your author profile.
-Make sure to keep it updated to reflect your latest achievements and contributions.
+That's it! You've successfully created and edited your author profile. Make sure to keep it updated to reflect your latest achievements and contributions.
