@@ -1,0 +1,19 @@
+name: Notify MCP Docs Update
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - 'docs/**'
+
+jobs:
+  notify-mcp-docs-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger MCP Update
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.SN_ASSISTANT_TOKEN }}
+          repository: ibm-skills-network/sn-assistant
+          event-type: mcp-docs-update
+          client-payload: '{"repository_url": "https://author.skills.network/docs", "library_name": "author-workbench", "version": "1"}'
