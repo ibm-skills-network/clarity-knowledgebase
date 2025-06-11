@@ -62,7 +62,8 @@ from ibm_watsonx_ai.foundation_models import ModelInference
 import json
 
 my_credentials = {
-    "url"    : "https://us-south.ml.cloud.ibm.com"
+     url="https://us-south.ml.cloud.ibm.com",     
+ #   apikey="your_api_key_here" # Uncomment and add your API key if not using skills-network 
 }
 
 
