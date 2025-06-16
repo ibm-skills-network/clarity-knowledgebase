@@ -50,6 +50,11 @@ const config = {
             label: 'Author Workbench',
             position: 'right',
           },
+          {
+            href: 'https://github.com/ibm-skills-network/author-workbench-knowledgebase',
+            label: 'Edit the Wiki',
+            position: 'right',
+          },
         ],
       },
       footer: {
