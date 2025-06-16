@@ -1,6 +1,6 @@
 # Skills Network Knowledgebase
 
-Welcome to the public knowledgebase for Skills Network. This website is built using [Docusaurus 2](https://docusaurus.io/).
+Welcome to the public knowledgebase for Skills Network. This website is built using [Docusaurus](https://docusaurus.io/).
 
 ### Updating the Knowledgebase
 
