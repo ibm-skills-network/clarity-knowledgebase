@@ -6,6 +6,8 @@ on:
     paths:
       - 'docs/**'
 
+  workflow_dispatch:
+
 jobs:
   notify-vector-db-update:
     runs-on: ubuntu-latest
