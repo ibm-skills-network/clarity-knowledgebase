@@ -128,3 +128,22 @@ message = client.messages.create(
 )
 print(message.content)
 ```
+
+#### CrewAI
+
+To use the free WatsonX API provided by the Skills Network with CrewAI, make sure to leave out the `api_key` parameter in the LLM object of CrewAI. However, the following parameteres must be defined:
+- `model`: The foundational model to use, e.g., "watsonx/ibm/granite-3-3-8b-instruct"
+- `base_url`: The WatsonX service endpoint, generally: "https://us-south.ml.cloud.ibm.com"
+- `project_id`: Set to "skills-network" for the use in Skills Network environment
+
+```python
+from crewai import LLM 
+
+llm = LLM(
+    model="watsonx/ibm/granite-3-3-8b-instruct",
+    base_url="https://us-south.ml.cloud.ibm.com",
+    project_id="skills-network",
+)
+```
+
+Here is the [official documentation](https://docs.crewai.com/en/concepts/llms#provider-configuration-examples) of CrewAI. CrewAI uses LiteLLM which handles all the LLM requests. Supported models listed under [LiteLLM site](https://docs.litellm.ai/docs/providers/watsonx) of IBM Watsonx.ai are all deprecated so please be mindful using those. Here is the [list of IBM foundational models](https://www.ibm.com/docs/en/watsonx/saas?topic=models-foundation) available on watsonx.ai for the users to try.
