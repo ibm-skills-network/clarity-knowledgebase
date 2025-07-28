@@ -4,7 +4,7 @@ title: Welcome
 slug: /
 ---
 
-# Getting Started as Content Creator
+# Getting Started as a Content Creator
 
 Welcome to the **Author Knowledgebase**. We are in the process of building this knowledgebase to help you build **amazing content** with Author Workbench.We could use your help. Anyone can contribute to this knowledgebase. By contributing your knowledge and insights to this knowledge base you wold be helping hundreds of other contebnt creators to educate millions of people in the latest technologies.
 
