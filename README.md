@@ -1,4 +1,4 @@
-# Skills Network Knowledgebase
+# Clarity Knowledgebase
 
 Welcome to the public knowledgebase for Skills Network. This website is built using [Docusaurus](https://docusaurus.io/).
 
